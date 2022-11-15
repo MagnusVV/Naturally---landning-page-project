@@ -9,10 +9,21 @@ body {
 .navbar {
   width: 26.75rem;
   height: 5rem;
+  padding: 2.5rem 1.5rem 1rem 1.5rem;
   background-color: grey;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+/* Behållare för CTA-ikonerna i nav-bar*/
+.nav-bar-icon-container {
+  width: auto;
+}
+
+.nav-bar-icon-container img {
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Diven för sök-funktion högst upp*/
@@ -44,6 +55,9 @@ body {
   width: 26.75rem;
   height: 14.5rem;
   background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* Email-input field in naturally-pop-up*/
 .middle-search {
@@ -92,8 +106,10 @@ body {
   width: 24.75rem;
   border-radius: 48px;
   height: 2.5rem;
+  margin: auto;
+  display: block;
   border: none;
-  text-align: center;
+  padding-left: 30px;
 }
 /* Allra längst ner i footer payment-grejer*/
 .payment {
