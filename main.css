@@ -1,0 +1,22 @@
+body {
+  width: 100vw;
+  margin: 0;
+}
+
+.navbar {
+  width: 26.75rem;
+  height: 5rem;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logga {
+}
+
+/* @media screen and (min-width: 1024px) {
+  body {
+    background-color: lightgreen;
+  }
+} */
