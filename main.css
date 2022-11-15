@@ -1,8 +1,11 @@
+* {
+  box-sizing: border-box;
+}
 body {
   width: 100vw;
   margin: 0;
 }
-
+/* nav-bar*/
 .navbar {
   width: 26.75rem;
   height: 5rem;
@@ -12,7 +15,90 @@ body {
   align-items: center;
 }
 
-.logga {
+/* Diven för sök-funktion högst upp*/
+.search-bar {
+  width: 26.75rem;
+  height: 3rem;
+  background-color: rgb(193, 192, 192);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Search-field*/
+.top-search {
+  width: 23.75rem;
+  border-radius: 40px;
+  height: 2rem;
+  border: none;
+  padding-left: 30px;
+}
+
+.hero {
+  width: 26.75rem;
+  height: 26.75rem;
+  background-color: grey;
+  margin-bottom: 0.5rem;
+}
+/* Naturally pop-up event*/
+.info {
+  width: 26.75rem;
+  height: 14.5rem;
+  background-color: lightgrey;
+}
+/* Email-input field in naturally-pop-up*/
+.middle-search {
+  width: 23.75rem;
+  border-radius: 48px;
+  height: 2.5rem;
+  border: none;
+  text-align: center;
+}
+/* Nyheter + karusell*/
+.news {
+  height: 27.5rem;
+  background-color: grey;
+}
+/* Container för de två klädes-plaggen*/
+.clothes {
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 65.75rem;
+}
+/* Två klädesplagg-lådorna*/
+.flex-container {
+  width: 24.75rem;
+  height: 32.5rem;
+  background-color: grey;
+}
+/* Text ide-spruta*/
+.text {
+  height: 11.25rem;
+  width: 26.75rem;
+  background-color: lightgrey;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+/* I footer container för tre divar information/paymeny/contact*/
+.contact-info {
+  height: 36rem;
+  background-color: brown;
+  margin-bottom: 0.125rem;
+}
+
+.bottom-search {
+  width: 24.75rem;
+  border-radius: 48px;
+  height: 2.5rem;
+  border: none;
+  text-align: center;
+}
+/* Allra längst ner i footer payment-grejer*/
+.payment {
+  height: 5.375rem;
+  background-color: brown;
 }
 
 /* @media screen and (min-width: 1024px) {
