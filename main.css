@@ -114,21 +114,6 @@ body {
   padding-left: 30px;
 }
 
-.footer-sm-icons {
-  padding: 2.5rem 3.7rem 1rem 3.7rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-/* Allra längst ner i footer payment-grejer*/
-.payment {
-  height: 5.375rem;
-  padding: 1rem 1.75rem 0rem 1.75rem;
-  background-color: #9e9e9e;
-  display: flex;
-  justify-content: space-between;
-}
-
 /* @media screen and (min-width: 1024px) {
   body {
     background-color: lightgreen;

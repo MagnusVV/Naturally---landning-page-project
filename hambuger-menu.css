@@ -1,5 +1,5 @@
+/*All of this is for the hamburger-menu*/
 @media (max-width: 1024px) {
-  /*All of this is for the hamburger-menu*/
   .hamburger-menu {
     display: block;
     float: left;
@@ -19,6 +19,13 @@
 
   .nav-item {
     margin: 16px 0;
+  }
+  .nav-item.active {
+    width: 18.75rem;
+    background-color: green;
+
+    width: 18.75rem;
+    height: 3rem;
   }
   .nav-menu.active {
     left: 0;
