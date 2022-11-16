@@ -1,0 +1,26 @@
+@media (max-width: 1024px) {
+  /*All of this is for the hamburger-menu*/
+  .hamburger-menu {
+    display: block;
+    float: left;
+  }
+
+  .nav-menu {
+    position: fixed;
+    width: 15rem;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.4s ease-in-out;
+    background-color: grey;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+}

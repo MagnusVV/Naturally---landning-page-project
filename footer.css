@@ -1,0 +1,19 @@
+/* I footer container för tre divar information/paymeny/contact*/
+.contact-info {
+  height: 36rem;
+  background-color: brown;
+  margin-bottom: 0.125rem;
+}
+
+.bottom-search {
+  width: 24.75rem;
+  border-radius: 48px;
+  height: 2.5rem;
+  border: none;
+  text-align: center;
+}
+/* Allra längst ner i footer payment-grejer*/
+.payment {
+  height: 5.375rem;
+  background-color: brown;
+}

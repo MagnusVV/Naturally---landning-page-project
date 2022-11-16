@@ -1,8 +1,11 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 body {
   width: 100vw;
+<<<<<<< Updated upstream
   margin: 0;
 }
 /* nav-bar*/
@@ -14,6 +17,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+=======
+>>>>>>> Stashed changes
 }
 
 /* Behållare för ikonerna i nav-bar och footer*/
@@ -59,6 +64,11 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+.eventpost {
+  font-family: "Inter";
+  font-size: 44px;
+}
 /* Email-input field in naturally-pop-up*/
 .middle-search {
   width: 23.75rem;
@@ -95,6 +105,7 @@ body {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
+<<<<<<< Updated upstream
 /* I footer container för tre divar information/paymeny/contact + 1 div för att hålla sociala medier-ikoner*/
 
 footer {
@@ -132,9 +143,17 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+=======
+>>>>>>> Stashed changes
 
 /* @media screen and (min-width: 1024px) {
   body {
     background-color: lightgreen;
   }
 } */
+
+@media (max-width: 900px) {
+  .list-menu {
+    display: none;
+  }
+}

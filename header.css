@@ -1,0 +1,53 @@
+/* nav-bar*/
+.navbar {
+  width: 26.75rem;
+  height: 5rem;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.navlink {
+  transition: 0.6s ease;
+}
+.navlink:hover {
+  color: blue;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+/* Kolla upp website transition*/
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  transition: 0.3s ease-out;
+  background-color: white;
+}
