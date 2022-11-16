@@ -39,12 +39,11 @@ a {
 }
 
 .hamburger-menu {
-  display: flex;
-  justify-content: left;
+  overflow: hidden;
 
   cursor: pointer;
 }
-/* Kolla upp website transition*/
+
 .bar {
   display: block;
   width: 1.6rem;
