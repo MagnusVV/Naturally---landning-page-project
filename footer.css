@@ -1,12 +1,12 @@
 /* I footer container för tre divar information/paymeny/contact*/
 
 footer {
-  color: white;
+  color: var(--caffe-mocha);
 }
 
 .contact-info {
   height: 36rem;
-  background-color: #9e9e9e;
+  background-color: var(--latte-macchiato);
   margin-bottom: 0.125rem;
   padding: 1rem 1rem 0rem 1rem;
 }
@@ -23,16 +23,17 @@ footer {
 }
 
 .footer-sm-icons {
-  padding: 2.5rem 3.7rem 1rem 3.7rem;
+  padding: 1.5rem 3.7rem 2.25rem 3.7rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  filter: invert(100%);
 }
 /* Allra längst ner i footer payment-grejer*/
 .payment {
   height: 5.375rem;
   padding: 1rem 1.75rem 0rem 1.75rem;
-  background-color: #9e9e9e;
+  background-color: var(--latte-macchiato);
   display: flex;
   justify-content: space-between;
 }

@@ -1,3 +1,5 @@
+// HAMBURGERMENYN
+
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -12,3 +14,14 @@ document.querySelectorAll(".navlink").forEach((e) =>
     navMenu.classList.remove("active");
   })
 );
+
+// E-MAILADRESSFÄLTET
+
+const signUpField = document.querySelector(".email-input-field");
+
+signUpField.addEventListener("keyup", (submit) => {
+  if (submit.key === "Enter") {
+    console.log(submit.target.value);
+    signUpField.value = "";
+  }
+});
