@@ -90,16 +90,6 @@ body {
   margin-bottom: 2.5rem;
 }
 
-.bottom-search {
-  width: 24.75rem;
-  border-radius: 48px;
-  height: 2.5rem;
-  margin: auto;
-  display: block;
-  border: none;
-  padding-left: 30px;
-}
-
 /* @media screen and (min-width: 1024px) {
   body {
     background-color: lightgreen;
