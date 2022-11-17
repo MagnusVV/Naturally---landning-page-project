@@ -53,6 +53,7 @@ a {
 
 .navlink {
   transition: 0.6s ease;
+  font-family: var(--h2-semi-bold);
 }
 .navlink:hover {
   color: blue;
