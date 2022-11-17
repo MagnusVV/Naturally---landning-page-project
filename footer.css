@@ -1,24 +1,4 @@
 /* I footer container för tre divar information/paymeny/contact*/
-.contact-info {
-  height: 36rem;
-  background-color: brown;
-  margin-bottom: 0.125rem;
-}
-
-.bottom-search {
-  width: 24.75rem;
-  border-radius: 48px;
-  height: 2.5rem;
-  border: none;
-  text-align: center;
-}
-/* Allra längst ner i footer payment-grejer*/
-.payment {
-  height: 5.375rem;
-  background-color: brown;
-}
-
-/* I footer container för tre divar information/paymeny/contact + 1 div för att hålla sociala medier-ikoner*/
 
 footer {
   color: white;
@@ -30,3 +10,31 @@ footer {
   margin-bottom: 0.125rem;
   padding: 1rem 1rem 0rem 1rem;
 }
+
+.bottom-search {
+  width: 100%;
+  max-width: 24.75rem;
+  border-radius: 48px;
+  height: 2.5rem;
+  margin: auto;
+  display: block;
+  border: none;
+  padding-left: 30px;
+}
+
+.footer-sm-icons {
+  padding: 2.5rem 3.7rem 1rem 3.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Allra längst ner i footer payment-grejer*/
+.payment {
+  height: 5.375rem;
+  padding: 1rem 1.75rem 0rem 1.75rem;
+  background-color: #9e9e9e;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* I footer container för tre divar information/paymeny/contact + 1 div för att hålla sociala medier-ikoner*/
