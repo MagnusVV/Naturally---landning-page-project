@@ -3,17 +3,21 @@
   /* width: 26.75rem; */
   height: 5rem;
   padding: 2.5rem 1.5rem 1rem 1.5rem;
-  background-color: #9e9e9e;
+  background-color: var(--latte-macchiato);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.navbar :nth-child(4) {
+  margin-left: 6%;
+}
+
 /* Diven för sök-funktion högst upp*/
-.search-bar {
+.top-search-bar {
   /* width: 26.75rem; */
   height: 3rem;
-  background-color: #d9d9d9;
+  background-color: var(--latte-macchiato);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +37,7 @@ li {
 }
 
 a {
-  color: white;
+  color: var(--caffe-mocha);
   text-decoration: none;
 }
 
@@ -58,9 +62,10 @@ a {
   color: blue;
 }
 
+/* Hamburgar-menyn */
+
 .hamburger-menu {
   overflow: hidden;
-
   cursor: pointer;
 }
 
@@ -70,5 +75,5 @@ a {
   height: 0.1rem;
   margin: 0.5rem;
   transition: 0.3s ease-out;
-  background-color: white;
+  background-color: var(--caffe-mocha);
 }
