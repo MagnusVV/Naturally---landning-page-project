@@ -60,8 +60,7 @@ a {
 }
 
 .hamburger-menu {
-  overflow: hidden;
-
+  display: none;
   cursor: pointer;
 }
 
