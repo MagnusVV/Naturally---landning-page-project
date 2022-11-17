@@ -1,31 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap");
 
-:root {
-  --h1-inter-light: 64px;
-  --h1-inter-regular: 92px;
-  --h2-inter-semi-bold: 40px;
-  --h2-inter-regular: 36px;
-  --h3-inter-regular: 32px;
-  --h3-inter-medium: 36px;
-  --h4-source-serif-semibold: 32px;
-  --P1-source-serif-regular: 32px;
-  --P2-source-serif-medium: 28px;
-  --CTA-inter-medium: 24px;
-  --CTA-big-inter-medium: 32px;
-  --P1-inter-regular: 24px;
+.info h1 {
+  font-size: var(--h1-inter-regular-mobile);
+  text-align: center;
+  font-weight: 400;
+}
 
-  --h1-inter-regular-mobile: 44px;
-  --h1-inter-light-mobile: 36px;
-  --h2-inter-semibold-mobile: 24px;
-  --h3-inter-medium-mobile: 16px;
-  --h2-inter-regular-mobile: 16px;
-  --P1-inter-regular-mobile: 12px;
+.info p {
+  font-size: var(--P1-inter-regular-mobile);
+  font-family: "source serif 4";
+}
 
-  --latte-macchiato: #eae6e1;
-  --cappuccino: #cfc5b6;
-  --caffe-correto: #837561;
-  --caffe-mocha: #492f11;
-  --espresso: #150c01;
-  --white: #ffff;
+.info h2 {
+  font-size: var(--h2-inter-regular-mobile);
+  font-weight: 400;
 }
