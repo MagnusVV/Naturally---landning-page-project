@@ -1,6 +1,5 @@
 /* nav-bar*/
 .navbar {
-  /* width: 26.75rem; */
   height: 5rem;
   padding: 2.5rem 1.5rem 1rem 1.5rem;
   background-color: var(--latte-macchiato);
@@ -10,12 +9,11 @@
 }
 
 .navbar :nth-child(4) {
-  margin-left: 6%;
+  margin-left: 5%;
 }
 
 /* Diven för sök-funktion högst upp*/
 .top-search-bar {
-  /* width: 26.75rem; */
   height: 3rem;
   background-color: var(--latte-macchiato);
   display: flex;

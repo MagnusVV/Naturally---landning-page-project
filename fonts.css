@@ -9,12 +9,38 @@
   margin-bottom: 1rem;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap");
+.news-banner h1 {
+  font-size: var(--h1-inter-light-mobile);
+  font-weight: 300;
+  text-align: center;
+  line-height: 6.5rem;
+
+  /*position: relative för att kunna måtta in linjer från sidan mot texten. */
+  position: relative;
+}
+
+.product-image-container h4 {
+  font-family: "source serif 4";
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--espresso);
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+.product-image-container p {
+  font-family: "source serif 4";
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--espresso);
+  position: absolute;
+  top: 1.75rem;
+  left: 0.5rem;
+}
 
 .info h1 {
   font-size: var(--h1-inter-regular-mobile);
-  text-align: center;
   font-weight: 400;
   line-height: 40px;
   margin-bottom: 0.75rem;
