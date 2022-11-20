@@ -11,6 +11,26 @@ footer {
   padding: 1rem 1rem 0rem 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .contact-info {
+    height: 21.5rem;
+    padding: 3.25rem 2rem 0rem 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .newsletter {
+    order: 1;
+  }
+
+  .info-naturally {
+    order: 0;
+  }
+
+  .contact {
+  }
+}
+
 .bottom-email-input-field {
   width: 100%;
   max-width: 24.75rem;
@@ -29,13 +49,31 @@ footer {
   align-items: center;
   filter: invert(100%);
 }
-/* Allra längst ner i footer payment-grejer*/
+
+@media screen and (min-width: 768px) {
+  .footer-sm-icons {
+    padding: 1.5rem 1rem 2.25rem 1rem;
+  }
+}
+
+/* Allra längst ner i footer: payment-grejer*/
 .payment {
   height: 5.375rem;
   padding: 1rem 1.75rem 0rem 1.75rem;
   background-color: var(--latte-macchiato);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 3.2%;
 }
 
-/* I footer container för tre divar information/paymeny/contact + 1 div för att hålla sociala medier-ikoner*/
+.payment > div img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .payment {
+    height: 6.25rem;
+    padding: 1rem 2rem 0rem 2rem;
+  }
+}

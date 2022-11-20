@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap");
-
 .hero-container p {
   font-size: var(--h3-inter-medium-mobile);
   font-family: "source serif 4";
@@ -19,7 +16,7 @@
   position: relative;
 }
 
-.product-image-container h4 {
+.product-img-slider-container h4 {
   font-family: "source serif 4";
   font-size: 16px;
   font-weight: 600;
@@ -29,7 +26,7 @@
   left: 0.5rem;
 }
 
-.product-image-container p {
+.product-img-slider-container p {
   font-family: "source serif 4";
   font-size: 16px;
   font-weight: 300;
@@ -37,6 +34,14 @@
   position: absolute;
   top: 1.75rem;
   left: 0.5rem;
+}
+
+.large-product-img-container h1 {
+  font-size: var(--h1-inter-light-mobile);
+  font-weight: 300;
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
 }
 
 .info h1 {

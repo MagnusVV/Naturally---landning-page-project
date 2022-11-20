@@ -1,50 +1,3 @@
-:root {
-  --h1-inter-light: 64px;
-  --h1-inter-regular: 92px;
-  --h2-inter-semi-bold: 40px;
-  --h2-inter-regular: 36px;
-  --h3-inter-regular: 32px;
-  --h3-inter-medium: 36px;
-  --h4-source-serif-semibold: 32px;
-  --P1-source-serif-regular: 32px;
-  --P2-source-serif-medium: 28px;
-  --CTA-inter-medium: 24px;
-  --CTA-big-inter-medium: 32px;
-  --P1-inter-regular: 24px;
-
-  --h1-inter-regular-mobile: 44px;
-  --h1-inter-light-mobile: 36px;
-  --h2-inter-semibold-mobile: 24px;
-  --h3-inter-medium-mobile: 16px;
-  --h2-inter-regular-mobile: 16px;
-  --P1-inter-regular-mobile: 12px;
-  --CTA-inter-medium-mobile: 16px;
-  --CTA-inter-big-mobile: 20px;
-
-  --latte-macchiato: #eae6e1;
-  --cappuccino: #cfc5b6;
-  --caffe-correto: #837561;
-  --caffe-mocha: #492f11;
-  --espresso: #150c01;
-  --white: #ffff;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-html,
-body {
-  font-family: "Inter";
-}
-
-body {
-  width: 100vw;
-  margin: 0;
-}
-
 /* Behållare för ikonerna i nav-bar och footer*/
 .icon-container {
   min-width: 1%;
@@ -58,8 +11,10 @@ body {
 
 /* Hero-sektionen*/
 .hero {
-  height: 26.75rem;
-  margin-bottom: 0.5rem;
+  /* height: 26.75rem; */
+  max-height: fit-content;
+  /* margin-bottom: 0.5rem; */
+  margin-bottom: 0.25rem;
   position: relative;
 }
 
@@ -113,16 +68,17 @@ body {
 
 /* Nyheter + sidoscroller*/
 .news {
-  height: 20.75rem;
   background-color: white;
-  /*   display: flex;
-  align-items: flex-end; */
+  height: auto;
   display: grid;
   grid-template: 6.5rem 14.25rem / 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .news-banner {
   color: var(--espresso);
+  height: auto;
 }
 
 /* Linjerna kring "Nyheter" */
@@ -153,16 +109,17 @@ body {
 }
 
 /* Bildbehållare med sidoscrollsfuktion */
-.products-slider {
+.products-img-slider {
   height: 14.25rem;
   padding: 0rem 1rem 0rem 1rem;
+  margin-top: 0;
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  gap: 0.5rem;
+  column-gap: 0.5rem;
 }
 
-.product-image-container {
+.product-img-slider-container {
   /*   height: 14.25rem;*/
   width: 10.625rem;
   flex: 0 0 auto;
@@ -170,28 +127,40 @@ body {
   position: relative;
 }
 
-/* Container för de två klädes-plaggen*/
-.clothes-container {
+.sidescroll-product-img {
+  max-width: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Sektion för de två klädes-plaggen*/
+.large-product-img-section {
   margin-top: 1.25rem;
   padding: 0rem 1rem 0rem 1rem;
-  /*   display: flex;
-  justify-content: space-between; */
-  /*   align-items: center;
-  flex-direction: column; */
-  max-height: 65.75rem;
+  /* height: 65.75rem; */
+  height: auto;
   display: grid;
-  grid-template: 32.5rem 32.5rem / auto;
+  /* grid-template: 32.5rem 32.5rem / auto; */
+  grid-template: auto auto / auto;
   gap: 0.75rem;
-  text-align: center;
 }
 
-.grid-container h1 {
-  font-size: var(--h1-inter-light-mobile);
-  font-weight: 300;
-}
-
-.grid-container {
+/* Två klädesplagg-lådorna*/
+.large-product-img-container {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  /* margin: 0rem 1rem 0rem 1rem; */
+  background-color: #eaeaea;
   position: relative;
+}
+
+.large-product-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .button-clothes {
@@ -207,15 +176,6 @@ body {
   position: absolute;
   bottom: 1.25rem;
   right: 1.25rem;
-}
-
-/* Två klädesplagg-lådorna*/
-.grid-container {
-  width: 100%;
-  height: 32.5rem;
-  align-self: center;
-  /* margin: 0rem 1rem 0rem 1rem; */
-  background-color: #eaeaea;
 }
 
 /* Text ide-spruta*/
