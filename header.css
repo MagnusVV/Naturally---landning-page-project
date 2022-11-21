@@ -75,12 +75,13 @@ a {
   font-family: var(--h2-semi-bold);
 }
 .navlink:hover {
-  color: blue;
+  color: var(--cappuccino);
 }
 
 /* Hamburgar-menyn */
 
-.hamburger-menu {
+.hamburger-menu,
+.hamburger-contact {
   overflow: hidden;
   display: none;
   cursor: pointer;

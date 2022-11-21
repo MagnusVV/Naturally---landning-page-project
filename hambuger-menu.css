@@ -8,25 +8,27 @@
   .nav-menu {
     position: fixed;
     width: 15rem;
+    height: 34.8rem;
     left: -100%;
     top: 90px;
-    gap: 0;
+
+    z-index: 50;
     flex-direction: column;
     text-align: center;
     transition: 0.4s ease-in-out;
     background-color: grey;
     display: flex;
+    gap: 0;
   }
 
   .nav-item {
-    margin: 16px 0;
     background-color: white;
     width: 100%;
     height: 3rem;
     margin: 0.25rem;
     text-align: center;
+    font-size: var(--CTA-inter-big-mobile);
   }
-
   .nav-menu.active {
     left: 0;
   }
