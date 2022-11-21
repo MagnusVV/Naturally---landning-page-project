@@ -121,6 +121,8 @@
 
 .product-img-slider-container {
   /*   height: 14.25rem;*/
+  /*   Height minskad till 14 rem för att få bort studsen i höjdled */
+  height: 14rem;
   width: 10.625rem;
   flex: 0 0 auto;
   background-color: #eae6e1;
