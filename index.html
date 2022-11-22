@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="global.css" />
-    <link rel="stylesheet" href="typography.css" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="hambuger-menu.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/typography.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/hambuger-menu.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -23,6 +23,8 @@
     <!-- HEADER -->
 
     <header>
+      <!-- Navbar -->
+
       <nav class="navbar">
         <ul class="nav-menu">
           <li class="nav-item">
@@ -38,6 +40,9 @@
             <a href="#" class="navlink">Erbjudanden</a>
           </li>
         </ul>
+
+        <!-- SEKTION Hamburgar-menyn -->
+
         <section class="hamburger-section">
           <div class="hamburger-menu">
             <span class="bar"></span>
@@ -57,6 +62,15 @@
           <a href="#"></a>
         </nav> -->
 
+        <!-- Logotypen och CTA-ikoner -->
+
+        <div class="icon-container">
+          <img
+            src="./images/Desktop/Button/globe.svg"
+            alt="choose language"
+            class="CTA-icon-globe"
+          />
+        </div>
         <div class="icon-container">
           <img
             src="./images/Mobile/Naturally.svg"
@@ -91,8 +105,13 @@
     <!-- MAIN -->
 
     <main>
-      <div class="top-search-bar">
-        <input type="search" class="top-search" placeholder="Sök" />
+      <div class="menu-and-top-searchfield-bar">
+        <input type="search" class="top-searchfield" placeholder="Sök" />
+        <button class="top-menu-button">Produkter</button>
+        <button class="top-menu-button">Nyheter</button>
+        <button class="top-menu-button">Bästsäljare</button>
+        <button class="top-menu-button">Erbjudanden</button>
+        <button class="top-menu-button">Sök</button>
       </div>
       <section class="hero">
         <div class="hero-container">
@@ -109,7 +128,10 @@
         </div>
         <img src="./images/Mobile/Preview3 111 1.png" alt="" />
       </section>
-      <section class="info">
+
+      <!-- INFO-SEKTION om pop-up-event -->
+
+      <section class="info-section">
         <h1>
           NATURALLY <br />
           POP-UP EVENT
@@ -123,9 +145,13 @@
         />
       </section>
 
-      <!--NYHETER och PRODUCT SLIDER-->
-      <section class="news">
+      <!--SEKTION NYHETER-->
+
+      <section class="news-section">
         <div class="news-banner"><h1>Nyheter</h1></div>
+
+        <!-- Sidoscrollande / fast bilduppsättning -->
+
         <div class="products-img-slider">
           <div class="product-img-slider-container">
             <h4>Produktnamn</h4>
@@ -166,7 +192,7 @@
         </div>
       </section>
 
-      <!--LARGE PRODUCT IMAGES-->
+      <!--SEKTION LARGE PRODUCT IMAGES-->
       <section class="large-product-img-section">
         <div class="large-product-img-container">
           <h1>Produktnamn</h1>
@@ -186,7 +212,7 @@
         </div>
       </section>
 
-      <!-- TEXT-SEKTION -->
+      <!-- TEXT-SEKTION om rekrytering-->
 
       <section class="text">
         <h2>Är du en idéspruta och har<br />förslag på nya produkter?</h2>
@@ -198,6 +224,8 @@
       <!-- FOOTER -->
 
       <footer>
+        <!-- SEKTION kontaktinformation -->
+
         <section class="contact-info">
           <div class="newsletter">
             <h2>Nyhetsbrev</h2>
@@ -309,6 +337,8 @@
         </div>
       </footer>
     </main>
+
+    <!-- Javascript -->
     <script src="script.js"></script>
   </body>
 </html>
