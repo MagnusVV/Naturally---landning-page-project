@@ -106,3 +106,13 @@ footer p {
   margin-bottom: 2rem;
   line-height: 24px;
 }
+
+.hamburger-contact h2 {
+  font-size: var(--h2-inter-semibold-mobile);
+  font-weight: 500;
+}
+
+.hamburger-contact p {
+  font-size: var(--P1-inter-regular-mobile);
+  font-family: "source serif 4";
+}

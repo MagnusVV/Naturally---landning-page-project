@@ -137,20 +137,20 @@ a {
 
 /* Hamburgar-menyn, pop-in */
 
-.hamburger-menu,
-.hamburger-contact {
+.hamburger-menu {
   overflow: hidden;
   display: none;
   cursor: pointer;
 }
+.logo-hamburger,
+.hamburger-contact {
+  overflow: hidden;
+  display: none;
+}
 
-.bar {
+.menu {
   display: block;
-  width: 1.6rem;
-  height: 0.1rem;
-  margin: 0.5rem 0rem 0.5rem 0rem;
-  transition: 0.3s ease-out;
-  background-color: var(--caffe-mocha);
+  transition: 0.5s ease-out;
 }
 
 /* <--- --- --- --- */

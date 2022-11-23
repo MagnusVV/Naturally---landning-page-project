@@ -1,5 +1,5 @@
 /*All of this is for the hamburger-menu*/
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .hamburger-menu {
     display: block;
     float: left;
@@ -7,21 +7,24 @@
 
   .nav-menu {
     position: fixed;
-    width: 15rem;
-    height: 34.8rem;
+    width: 19rem;
+    /* height: 34.8rem; */
     left: -100%;
-    top: 90px;
+    top: 1rem;
 
     z-index: 50;
     flex-direction: column;
     text-align: center;
     transition: 0.4s ease-in-out;
-    background-color: grey;
+    background-color: var(--latte-macchiato);
     display: flex;
     gap: 0;
   }
 
   .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     width: 100%;
     height: 3rem;
@@ -31,5 +34,24 @@
   }
   .nav-menu.active {
     left: 0;
+  }
+
+  .logo-hamburger {
+    display: flex;
+  }
+
+  .hamburger-contact.active {
+    display: grid;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+    grid-area: left;
+  }
+
+  .img-container-hamburger {
+    display: flex;
+    min-height: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    margin-top: 2.25rem;
   }
 }
