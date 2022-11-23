@@ -25,17 +25,33 @@
   justify-self: start;
 }
 
+/*Rullgardinsmeny för att välja språk*/
+
+.choose-lang {
+  visibility: hidden;
+  width: fit-content;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .choose-lang {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.25rem;
+  }
+}
+
 /*Globen*/
 .CTA-icon-globe {
   width: min-content;
-  visibility: hidden;
 }
 
 /*Globen vid +mobilstorlek*/
 @media screen and (min-width: 768px) {
   .CTA-icon-globe {
     width: 32px;
-    visibility: visible;
   }
 }
 
@@ -43,8 +59,24 @@
 @media screen and (min-width: 1024px) {
   .CTA-icon-globe {
     width: 36px;
-    visibility: visible;
   }
+}
+
+/*Själva rullgardinsmenyn (hover i detta fall)*/
+
+.choose-lang-drop-down {
+  position: relative;
+}
+
+.drop-down {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: auto;
+}
+
+.choose-lang-drop-down:hover .drop-down {
+  display: block;
 }
 
 /*Logotypen och dess behållare --->*/

@@ -80,12 +80,21 @@
 
         <!-- Logotypen och CTA-ikoner -->
 
-        <div class="icon-container">
-          <img
-            src="./images/Desktop/Button/globe.svg"
-            alt="choose language"
-            class="CTA-icon-globe"
-          />
+        <!-- Rullgardinsmeny för att välja språk -->
+        <div class="choose-lang">
+          <div class="icon-container">
+            <img
+              src="./images/Desktop/Button/globe.svg"
+              alt="choose language"
+              class="CTA-icon-globe"
+            />
+          </div>
+          <div class="choose-lang-drop-down">
+            <span>Språk</span>
+            <div class="drop-down">
+              <p>English</p>
+            </div>
+          </div>
         </div>
         <div class="icon-container">
           <img
@@ -121,19 +130,34 @@
     <!-- MAIN -->
 
     <main>
+      <!-- Sökfält för mobil / menyknappar för desktop -->
+
       <div class="menu-and-top-searchfield-bar">
-        <img
-          src="images/Mobile/Search_field_magnifying_glass.png"
-          class="search-icon"
-          aria-hidden="true"
-        />
-        <input type="search" class="top-searchfield" placeholder="Sök" />
+        <div class="field-looking-glass-container">
+          <img
+            src="images/Mobile/Icon/Looking_glass.svg"
+            class="search-icon"
+            aria-hidden="true"
+          />
+          <input type="search" class="top-searchfield" placeholder="Sök" />
+        </div>
+
         <button class="top-menu-button">Produkter</button>
         <button class="top-menu-button">Nyheter</button>
         <button class="top-menu-button">Bästsäljare</button>
         <button class="top-menu-button">Erbjudanden</button>
-        <button class="top-menu-button">Sök</button>
+        <div class="search-button">
+          <img
+            src="images/Mobile/Icon/Looking_glass.svg"
+            class="search-icon"
+            aria-hidden="true"
+          />
+          <button class="top-menu-button"><p>Sök</p></button>
+        </div>
       </div>
+
+      <!-- HERO-SEKTION -->
+
       <section class="hero">
         <div class="hero-container">
           <div class="hero-text">
@@ -214,6 +238,7 @@
       </section>
 
       <!--SEKTION LARGE PRODUCT IMAGES-->
+
       <section class="large-product-img-section">
         <div class="large-product-img-container">
           <h1>Produktnamn</h1>
