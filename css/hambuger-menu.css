@@ -58,4 +58,12 @@
     margin-top: 2.25rem;
     margin-left: 1.5rem;
   }
+  .menu-active {
+    display: block;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+    margin-left: 0.6rem;
+  }
 }
+
+/* Hamburgar-menyn, pop-in */

@@ -135,8 +135,6 @@ a {
   color: var(--cappuccino);
 }
 
-/* Hamburgar-menyn, pop-in */
-
 .hamburger-menu {
   overflow: hidden;
   display: none;
@@ -146,12 +144,6 @@ a {
 .hamburger-contact {
   overflow: hidden;
   display: none;
-}
-
-.menu {
-  display: block;
-  transition: 0.5s ease-out;
-  cursor: pointer;
 }
 
 /* <--- --- --- --- */
