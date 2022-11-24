@@ -101,7 +101,7 @@
   object-position: center;
 }
 
-/* Hero-sektionen */
+/* <!-- HERO-SEKTION --> */
 .hero {
   /* height: 26.75rem; */
   max-height: fit-content;
@@ -129,7 +129,7 @@
   justify-self: end;
 }
 
-.hero > img {
+.hero picture img {
   width: 100%;
   height: 100%;
   object-fit: cover;

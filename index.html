@@ -87,7 +87,7 @@
             />
           </div>
           <div class="choose-lang-drop-down">
-            <span>Språk</span>
+            <span>Svenska</span>
             <div class="drop-down">
               <p>English</p>
             </div>
@@ -123,37 +123,46 @@
         </div>
       </nav>
     </header>
+    <!-- Sökfält för mobil / menyknappar för desktop -->
+
+    <div class="menu-and-top-searchfield-bar">
+      <div class="field-looking-glass-container">
+        <img
+          src="images/Mobile/Icon/Looking_glass.svg"
+          class="search-icon"
+          aria-hidden="true"
+        />
+        <input type="search" class="top-searchfield" placeholder="Sök" />
+      </div>
+
+      <button class="top-menu-button">Produkter</button>
+      <button class="top-menu-button">Nyheter</button>
+      <button class="top-menu-button">Bästsäljare</button>
+      <button class="top-menu-button">Erbjudanden</button>
+      <div class="search-button">
+        <img
+          src="images/Mobile/Icon/Looking_glass.svg"
+          class="search-icon"
+          aria-hidden="true"
+        />
+        <button class="top-menu-button"><p>Sök</p></button>
+      </div>
+    </div>
 
     <!-- MAIN -->
 
     <main>
-      <!-- Sökfält för mobil / menyknappar för desktop -->
-
-      <div class="menu-and-top-searchfield-bar">
-        <div class="field-looking-glass-container">
-          <img
-            src="images/Mobile/Icon/Looking_glass.svg"
-            class="search-icon"
-            aria-hidden="true"
-          />
-          <input type="search" class="top-searchfield" placeholder="Sök" />
-        </div>
-
-        <button class="top-menu-button">Produkter</button>
-        <button class="top-menu-button">Nyheter</button>
-        <button class="top-menu-button">Bästsäljare</button>
-        <button class="top-menu-button">Erbjudanden</button>
-        <div class="search-button">
-          <img
-            src="images/Mobile/Icon/Looking_glass.svg"
-            class="search-icon"
-            aria-hidden="true"
-          />
-          <button class="top-menu-button"><p>Sök</p></button>
-        </div>
-      </div>
-
       <!-- HERO-SEKTION -->
+
+      <!--       <picture>
+        <source srcset="./images/car_2000w.jpeg" media="(min-width: 2000px)">
+        <source srcset="./images/car_1000w.jpeg" media="(min-width: 1000px)">
+        <source srcset="./images/car_700w.jpeg" media="(min-width: 700px)">
+        <source srcset="./images/car_400w.jpeg" media="(min-width: 400px)">
+
+
+        <img src="./images/car_700w.jpeg" alt="Bildjavel">
+    </picture> -->
 
       <section class="hero">
         <div class="hero-container">
@@ -168,7 +177,17 @@
             <img src="./images/Mobile/Sync-circle.svg" alt="Kretsloppssymbol" />
           </div>
         </div>
-        <img src="./images/Mobile/Preview3 111 1.png" alt="" />
+        <picture>
+          <source
+            srcset="./images/Mobile/Preview3_111_1.png"
+            media="(max-width: 768px)"
+          />
+          <source
+            srcset="./images/Desktop/Preview3_111_1_landscape.png"
+            media="(min-width: 769px)"
+          />
+          <img src="./images/Mobile/Preview3_111_1.png" alt="Hero picture" />
+        </picture>
       </section>
 
       <!-- INFO-SEKTION om pop-up-event -->
@@ -257,8 +276,8 @@
       <!-- TEXT-SEKTION om rekrytering-->
 
       <section class="text">
-        <h2>Är du en idéspruta och har<br />förslag på nya produkter?</h2>
-        <h3>Vårt utvecklingsteam är alltid intresserade<br />av nya idéer!</h3>
+        <h2>Är du en idéspruta och har förslag på nya produkter?</h2>
+        <h3>Vårt utvecklingsteam är alltid intresserade av nya idéer!</h3>
         <p>Kontakta oss så pratar vi vidare</p>
         <button class="button-text">Kontakta oss</button>
       </section>
