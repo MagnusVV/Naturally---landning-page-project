@@ -1,42 +1,77 @@
 /* Inter-regular*/
 @font-face {
   font-family: "Inter";
-  src: local("Inter"),
+  src: local("Inter-Regular"),
     /* Get the user's local font if it exists */
-      url("/Fonts/Inter-Regular-webfont.woff2") format("woff2"),
-    url("/Fonts/Inter-Regular-webfont.woff") format("woff");
+      url("/css/fonts/Inter-Regular-webfont.woff2") format("woff2"),
+    url("css/fonts/Inter-Regular-webfont.woff") format("woff");
 }
 
 /* Inter-light*/
 @font-face {
   font-family: "Inter";
-  src: local("Inter"),
+  src: local("Inter-Light"),
     /* Get the user's local font if it exists */
-      url("/Fonts/Inter-Light-webfont.woff2") format("woff2"),
-    url("/Fonts/Inter-Light-webfont.woff") format("woff");
+      url("/css/fonts/Inter-Light.woff2") format("woff2"),
+    url("/css/fonts/Inter-Light.woff") format("woff");
 }
 
 /*Inter-medium*/
 @font-face {
-  font-family: "Inter";
-  src: local("Inter"),
+  font-family: "Inter-Medium";
+  src: local("Inter-Medium"),
     /* Get the user's local font if it exists */
-      url("/Fonts/Inter-Medium-webfont.woff2") format("woff2"),
-    url("/Fonts/Inter-Medium-webfont.woff") format("woff");
+      url("/css/fonts/Inter-Medium.woff2") format("woff2"),
+    url("/css/fonts/Inter-Medium.woff") format("woff");
 }
 
+/* Inter-SemiBold*/
 @font-face {
   font-family: "Inter";
-  src: local("Inter"),
+  src: local("Inter-SemiBold"),
     /* Get the user's local font if it exists */
-      url("/Fonts/Inter-SemiBold-webfont.woff2") format("woff2"),
-    url("/Fonts/Inter-SemiBold-webfont.woff") format("woff");
+      url("/css/fonts/Inter-SemiBold.woff2") format("woff2"),
+    url("/css/fonts/Inter-SemiBold.woff") format("woff");
+}
+
+/* SourceSerif-Regular*/
+@font-face {
+  font-family: "Source Serif 4";
+  src: local("SourceSerif-Regular"),
+    /* Get the user's local font if it exists */
+      url("/css/fonts/SourceSerif4-Regular-webfont.woff2") format("woff2"),
+    url("/css/fonts/SourceSerif4-Regular-webfont.woff") format("woff");
+}
+/* SourceSerif-Light*/
+@font-face {
+  font-family: "SourceSerif-Light";
+  src: local("SourceSerif-Light"),
+    /* Get the user's local font if it exists */
+      url("/css/fonts/SourceSerif4-Light.woff2") format("woff2"),
+    url("/css/fonts/SourceSerif4-Light.woff") format("woff");
+}
+
+/* SourceSerif-Medium*/
+@font-face {
+  font-family: "Source Serif 4";
+  src: local("SourceSerif-Medium"),
+    /* Get the user's local font if it exists */
+      url("/css/fonts/SourceSerif4-Medium.woff2") format("woff2"),
+    url("/css/fonts/SourceSerif4-Medium.woff") format("woff");
+}
+
+/* SourceSerif-SemiBold*/
+@font-face {
+  font-family: "Source Serif 4";
+  src: local("SourceSerif-SemiBold"),
+    /* Get the user's local font if it exists */
+      url("/css/fonts/SourceSerif4-SemiBold.woff2") format("woff2"),
+    url("/css/fonts/SourceSerif4-SemiBold.woff") format("woff");
 }
 
 .hero-container p {
-  font-size: var(--h3-inter-medium-mobile);
-  font-family: "source serif 4";
-  font-weight: 300;
+  font-size: 20px;
+  font-family: "SourceSerif-Light";
   line-height: 20px;
   margin-bottom: 1rem;
 }
@@ -80,7 +115,7 @@
 }
 
 .info-section h1 {
-  font-size: var(--h1-inter-regular-mobile);
+  font-family: "Inter-Medium";
   font-weight: 400;
   line-height: 40px;
   margin-bottom: 0.75rem;
@@ -144,6 +179,7 @@ footer p {
 
 .hamburger-contact h2 {
   font-size: var(--h2-inter-semibold-mobile);
+
   font-weight: 500;
 }
 
