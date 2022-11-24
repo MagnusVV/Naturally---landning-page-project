@@ -261,7 +261,8 @@
 .button-clothes {
   width: 9.6rem;
   height: 2.75rem;
-  font-family: "Inter-Medium";
+  font-family: "Inter";
+  font-weight: 500;
   font-size: 20px;
   color: var(--espresso);
   border-radius: 2.5rem;
@@ -272,6 +273,19 @@
   position: absolute;
   bottom: 1.25rem;
   right: 1.25rem;
+}
+/* After you pressed the button */
+.button-clothes:active,
+.text-clothes:active,
+.button-text:active {
+  background-color: var(--caffe-mocha);
+}
+/* Hover over button */
+.button-clothes:hover,
+.text-clothes:hover,
+.button-text:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
 }
 
 /* Text ide-spruta*/
@@ -292,7 +306,8 @@
 .button-text {
   width: 11rem;
   height: 2.75rem;
-  font-family: "Inter-Medium";
+  font-family: "Inter";
+  font-weight: 500;
   font-size: 20px;
   color: var(--espresso);
   border-radius: 2.5rem;

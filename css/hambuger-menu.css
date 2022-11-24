@@ -30,7 +30,8 @@
     height: 3rem;
     margin: 0.17rem;
     text-align: center;
-    font-family: "Inter-Medium";
+    font-family: "Inter";
+    font-weight: 500;
     font-size: 20px;
   }
   .nav-menu.active {
