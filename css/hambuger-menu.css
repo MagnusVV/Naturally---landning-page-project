@@ -1,5 +1,5 @@
 /*All of this is for the hamburger-menu*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hamburger-menu {
     display: block;
     float: left;

@@ -125,7 +125,8 @@ h2 {
   left: 0.5rem;
 }
 
-.large-product-img-container h1 {
+.large-product-img-container-1st h1,
+.large-product-img-container-2nd h1 {
   font-family: "Inter";
   font-weight: 300;
   font-size: 36px;
