@@ -53,17 +53,28 @@
 
   .img-container-hamburger {
     display: flex;
+    align-items: center;
     min-height: 2rem;
     flex-wrap: wrap;
     margin-bottom: 1.5rem;
     margin-top: 2.25rem;
     margin-left: 1.5rem;
+    margin-right: 1rem;
   }
+
+  .hamburger-menu-active {
+    /* width: 58px; */
+    height: 52px;
+    width: 58px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
   .menu-active {
     display: block;
     transition: 0.5s ease-out;
     cursor: pointer;
-    margin-left: 0.6rem;
   }
 }
 
