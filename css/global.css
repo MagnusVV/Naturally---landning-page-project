@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap"); */
 
 :root {
-  --h1-inter-light: 64px;
+  /* --h1-inter-light: 64px;
   --h1-inter-regular: 92px;
   --h2-inter-semi-bold: 40px;
   --h2-inter-regular: 36px;
@@ -22,7 +22,7 @@
   --h2-inter-regular-mobile: 16px;
   --P1-inter-regular-mobile: 12px;
   --CTA-inter-medium-mobile: 16px;
-  --CTA-inter-big-mobile: 20px;
+  --CTA-inter-big-mobile: 20px; */
 
   --latte-macchiato: #eae6e1;
   --cappuccino: #cfc5b6;

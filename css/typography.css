@@ -1,3 +1,38 @@
+/* Inter-regular*/
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+    /* Get the user's local font if it exists */
+      url("/Fonts/Inter-Regular-webfont.woff2") format("woff2"),
+    url("/Fonts/Inter-Regular-webfont.woff") format("woff");
+}
+
+/* Inter-light*/
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+    /* Get the user's local font if it exists */
+      url("/Fonts/Inter-Light-webfont.woff2") format("woff2"),
+    url("/Fonts/Inter-Light-webfont.woff") format("woff");
+}
+
+/*Inter-medium*/
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+    /* Get the user's local font if it exists */
+      url("/Fonts/Inter-Medium-webfont.woff2") format("woff2"),
+    url("/Fonts/Inter-Medium-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+    /* Get the user's local font if it exists */
+      url("/Fonts/Inter-SemiBold-webfont.woff2") format("woff2"),
+    url("/Fonts/Inter-SemiBold-webfont.woff") format("woff");
+}
+
 .hero-container p {
   font-size: var(--h3-inter-medium-mobile);
   font-family: "source serif 4";
