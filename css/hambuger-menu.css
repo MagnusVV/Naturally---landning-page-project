@@ -89,6 +89,9 @@
     margin-right: 1rem;
     height: 5rem;
   }
+  .CTA-icon-globe-hamburger {
+    cursor: pointer;
+  }
 }
 
 /* Hamburgar-menyn, pop-in */
