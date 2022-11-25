@@ -78,12 +78,20 @@
     transition: 0.5s ease-out;
     cursor: pointer;
   }
-}
-
-.logo-mobile {
-  margin-left: auto;
-  margin-right: 1rem;
-  height: 5rem;
+  .nav-item:active {
+    background-color: var(--caffe-mocha);
+  }
+  .navlink:active {
+    color: white;
+  }
+  .logo-mobile {
+    margin-left: auto;
+    margin-right: 1rem;
+    height: 5rem;
+  }
+  .CTA-icon-globe-hamburger {
+    cursor: pointer;
+  }
 }
 
 /* Hamburgar-menyn, pop-in */

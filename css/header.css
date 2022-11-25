@@ -9,6 +9,12 @@
   justify-items: end;
 }
 
+.choose-lang-drop-down,
+.drop-down,
+.CTA-icon {
+  cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
   .navbar {
     height: 5.6rem;
@@ -157,14 +163,6 @@ a {
   .nav-menu {
     display: none;
   }
-}
-
-.navlink {
-  transition: 0.6s ease;
-  font-family: var(--h2-semi-bold);
-}
-.navlink:hover {
-  color: var(--cappuccino);
 }
 
 .hamburger-menu {
