@@ -58,12 +58,15 @@
   height: 100%;
   font-size: var(--CTA-inter-big-mobile);
   color: var(--caffe-mocha);
-  border-color: var(--caffe-correto);
+  border-color: var(--latte-macchiato);
   border-top: none;
   border-bottom: none;
+  border-style: solid;
+
   background-color: white;
   font-weight: 300;
   display: none;
+  cursor: pointer;
 }
 
 /* Behållare för att kunna lägga in sök-symbolen här */
@@ -78,6 +81,14 @@
 @media screen and (min-width: 768px) {
   .top-menu-button {
     display: inline-block;
+  }
+
+  .top-menu-button:active {
+    background-color: var(--caffe-mocha);
+    color: white;
+  }
+  .top-menu-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
   .search-button {
     display: flex;
@@ -362,6 +373,7 @@
 .text-clothes:active,
 .button-text:active {
   background-color: var(--caffe-mocha);
+  color: white;
 }
 /* Hover over button */
 .button-clothes:hover,
