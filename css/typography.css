@@ -1,236 +1,78 @@
+/* Mall för font-face:
+ @font-face {
+  font-family: "Inter-regular";
+  src: local(), url() format(), url() format();
+  font-weight: 400;
+} */
+
 /* Inter-regular*/
 @font-face {
-  font-family: "Inter";
-  src: local("Inter"),
-    /* Get the user's local font if it exists */
-      url("/css/fonts/Inter-Regular.woff2") format("woff2"),
-    url("css/fonts/Inter-Regular.woff") format("woff");
+  font-family: "Inter-regular";
+  src: url("./fonts/Inter-Regular.woff") format("woff"),
+    url("./fonts/Inter-Regular.woff2") format("woff2");
   font-weight: 400;
 }
 
 /* Inter-light*/
 @font-face {
-  font-family: "Inter";
-  src: local("Inter-Light"),
-    /* Get the user's local font if it exists */
-      url("/css/fonts/Inter-Light.woff2") format("woff2"),
+  font-family: "Inter-light";
+  src: url("/css/fonts/Inter-Light.woff2") format("woff2"),
     url("/css/fonts/Inter-Light.woff") format("woff");
   font-weight: 300;
 }
 
 /*Inter-medium*/
 @font-face {
-  font-family: "Inter";
-  src: local("Inter-Medium"),
-    /* Get the user's local font if it exists */
-      url("/css/fonts/Inter-Medium.woff2") format("woff2"),
+  font-family: "Inter-medium";
+  src: url("/css/fonts/Inter-Medium.woff2") format("woff2"),
     url("/css/fonts/Inter-Medium.woff") format("woff");
   font-weight: 500;
 }
 
 /* Inter-SemiBold*/
 @font-face {
-  font-family: "Inter";
-  src: local("Inter-SemiBold"),
-    /* Get the user's local font if it exists */
-      url("/css/fonts/Inter-SemiBold.woff2") format("woff2"),
+  font-family: "Inter-semibold";
+  src: url("/css/fonts/Inter-SemiBold.woff2") format("woff2"),
     url("/css/fonts/Inter-SemiBold.woff") format("woff");
   font-weight: 600;
 }
 
 /* SourceSerif-Regular*/
 @font-face {
-  font-family: "Source Serif 4";
-  src: local("Source Serif 4"),
-    /* Get the user's local font if it exists */
-      url("/css/fonts/SourceSerif4-Regular.woff2") format("woff2"),
+  font-family: "SourceSerif-regular";
+  src: url("/css/fonts/SourceSerif4-Regular.woff2") format("woff2"),
     url("/css/fonts/SourceSerif4-Regular.woff") format("woff");
   font-weight: 400;
 }
+
 /* SourceSerif-Light*/
 @font-face {
-  font-family: "Source Serif 4";
-  src: local("SourceSerif-Light"),
-    /* Get the user's local font if it exists */
-      url("/css/fonts/SourceSerif4-Light.woff2") format("woff2"),
+  font-family: "SourceSerif-light";
+  src: url("/css/fonts/SourceSerif4-Light.woff2") format("woff2"),
     url("/css/fonts/SourceSerif4-Light.woff") format("woff");
   font-weight: 300;
 }
 
 /* SourceSerif-Medium*/
 @font-face {
-  font-family: "Source Serif 4";
-  src: local("SourceSerif-Medium"),
-    /* Get the user's local font if it exists */
-      url("/css/fonts/SourceSerif4-Medium.woff2") format("woff2"),
+  font-family: "SourceSerif-medium";
+  src: url("/css/fonts/SourceSerif4-Medium.woff2") format("woff2"),
     url("/css/fonts/SourceSerif4-Medium.woff") format("woff");
   font-weight: 500;
 }
 
 /* SourceSerif-SemiBold*/
 @font-face {
-  font-family: "Source Serif 4";
-  src: local("SourceSerif-SemiBold"),
-    /* Get the user's local font if it exists */
-      url("/css/fonts/SourceSerif4-SemiBold.woff2") format("woff2"),
+  font-family: "SourceSerif-semibold";
+  src: url("/css/fonts/SourceSerif4-SemiBold.woff2") format("woff2"),
     url("/css/fonts/SourceSerif4-SemiBold.woff") format("woff");
   font-weight: 600;
 }
 
-h2 {
+/* h2 {
   all: unset;
-}
+} */
 
-.hero-container p {
-  font-size: 20px;
-  font-family: "Source Serif 4";
-  font-weight: 300;
-  line-height: 20px;
-  margin-bottom: 1rem;
-}
-
-/* <!--SEKTION NYHETER--> */
-
-.news-banner h1 {
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 36px;
-  text-align: center;
-  line-height: 6.5rem;
-
-  /*position: relative för att kunna måtta in linjer från sidan mot texten. */
-  position: relative;
-}
-
-.product-img-slider-container h4 {
-  font-family: "Source Serif 4";
-  font-weight: 600;
-  font-size: 16px;
-  color: var(--espresso);
-  position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-}
-
-.product-img-slider-container p {
-  font-family: "Source Serif 4";
-  font-weight: 300;
-  font-size: 16px;
-  font-weight: 300;
-  color: var(--espresso);
-  position: absolute;
-  top: 1.75rem;
-  left: 0.5rem;
-}
-
-.large-product-img-container-1st h1,
-.large-product-img-container-2nd h1 {
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 36px;
-  position: absolute;
-  top: 1.25rem;
-  left: 1.25rem;
-}
-
-/*<!-- INFO-SEKTION om pop-up-event -->*/
-
-.info-section h1 {
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 44px;
-  line-height: 40px;
-  margin-bottom: 0.75rem;
-}
-
-@media screen and (min-width: 768px) {
-  .info-section h1 {
-    font-family: "Inter";
-    font-weight: 400;
-    font-size: 92px;
-    line-height: 98px;
-    margin-bottom: 1.75rem;
-  }
-}
-
-.info-section p {
-  font-family: "Source Serif 4";
-  font-weight: 500;
-  font-size: 12px;
-
-  line-height: 16px;
-  margin-bottom: 1rem;
-}
-
-.info-section h2 {
-  font-family: "Inter";
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 0.5rem;
-}
-
-/* <!--SEKTION NYHETER--> */
-
-.text h2 {
-  font-family: "Inter";
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 28px;
-  margin-bottom: 0.5rem;
-}
-.text h3 {
-  font-family: "Inter";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 1rem;
-}
-
-.text p {
-  font-family: "Source Serif 4";
-  font-weight: 400;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  margin-bottom: 1rem;
-}
-
-/*  <!-- FOOTER -->*/
-
-footer h2 {
-  font-family: "Inter";
-  font-weight: 600;
-
-  font-size: 24px;
-  line-height: 28px;
-  margin-bottom: 0.75rem;
-}
-
-footer p {
-  font-size: 16px;
-  font-family: "Source Serif 4";
-  font-weight: 400;
-  line-height: 20px;
-  margin-bottom: 1rem;
-}
-
-.info-naturally p {
-  font-family: "Source Serif 4";
-  font-weight: 400;
-  margin-top: 0.25rem;
-  margin-bottom: 2rem;
-  line-height: 24px;
-}
-
-.hamburger-contact h2 {
-  font-family: "Inter";
-  font-weight: 600;
-  font-size: 24px;
-}
-
-.hamburger-contact p {
-  font-size: 16px;
-  line-height: 20px;
-  font-family: "Source Serif 4";
-}
+/* h1 {
+  all: unset;
+} */

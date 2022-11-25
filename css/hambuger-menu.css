@@ -90,6 +90,7 @@
     height: 5rem;
   }
   .CTA-icon-globe-hamburger {
+    margin-right: 0.5rem;
     cursor: pointer;
   }
 }

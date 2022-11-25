@@ -137,6 +137,13 @@
   position: absolute;
 }
 
+.hero-container p {
+  font-size: 20px;
+  font-family: "SourceSerif-light";
+  line-height: 20px;
+  margin-bottom: 1rem;
+}
+
 .hero-text {
   width: auto;
 }
@@ -183,6 +190,42 @@
   border: none;
   text-align: center;
 }
+
+.info-section h1 {
+  font-family: "Inter-regular";
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 40px;
+  margin-bottom: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .info-section h1 {
+    font-family: "Inter-regular";
+    font-weight: 400;
+    font-size: 92px;
+    line-height: 98px;
+    margin-bottom: 1.75rem;
+  }
+}
+
+.info-section p {
+  font-family: "SourceSerif-medium";
+  font-weight: 500;
+  font-size: 12px;
+
+  line-height: 16px;
+  margin-bottom: 1rem;
+}
+
+.info-section h2 {
+  font-family: "Inter-light";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0.5rem;
+}
+
 /* <--- --- */
 
 /* <!--SEKTION NYHETER -->*/
@@ -208,8 +251,21 @@
   height: auto;
 }
 
+.news-banner h1 {
+  font-family: "Inter-light";
+  /* Font-weight måste läggas till manuellt här av någon anledning*/
+  font-weight: 300;
+  font-size: 36px;
+  text-align: center;
+  line-height: 6.5rem;
+
+  /*position: relative för att kunna måtta in linjer från sidan mot texten. */
+  position: relative;
+}
+
 /* Linjerna kring "Nyheter" */
 .news-banner h1:before {
+  font-family: "Inter-light";
   content: "";
   display: block;
   width: 31.5%;
@@ -223,6 +279,7 @@
 }
 
 .news-banner h1:after {
+  font-family: "Inter-light";
   content: "";
   display: block;
   width: 31.5%;
@@ -278,7 +335,36 @@
   object-fit: cover;
   object-position: center;
 }
-/* <--- --- */
+
+.product-img-slider-container h4 {
+  font-family: "SourceSerif-medium";
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--espresso);
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+.product-img-slider-container p {
+  font-family: "SourceSerif-light";
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--espresso);
+  position: absolute;
+  top: 1.75rem;
+  left: 0.5rem;
+}
+
+.large-product-img-container-1st h1,
+.large-product-img-container-2nd h1 {
+  font-family: "Inter-light";
+  font-weight: 300;
+  font-size: 36px;
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+}
 
 /* <!--SEKTION LARGE PRODUCT IMAGES--> */
 
@@ -355,7 +441,7 @@
 .button-clothes {
   width: 9.6rem;
   height: 2.75rem;
-  font-family: "Inter";
+  font-family: "Inter-medium";
   font-weight: 500;
   font-size: 20px;
   color: var(--espresso);
@@ -385,6 +471,7 @@
 /* <--- --- */
 
 /* <!-- TEXT-SEKTION om rekrytering--> */
+
 .text {
   height: auto;
   background-color: var(--latte-macchiato);
@@ -409,11 +496,70 @@
 .button-text {
   width: 11rem;
   height: 2.75rem;
-  font-family: "Inter";
+  font-family: "Inter-medium";
   font-weight: 500;
   font-size: 20px;
   color: var(--espresso);
   border-radius: 2.5rem;
   background-color: white;
-  font-style: 300;
+}
+
+.text h2 {
+  font-family: "Inter-semibold";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 0.5rem;
+}
+.text h3 {
+  font-family: "Inter-medium";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 1rem;
+}
+
+.text p {
+  font-family: "SourceSerif-regular";
+  font-weight: 400;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 1rem;
+}
+
+/*  <!-- FOOTER -->*/
+
+footer h2 {
+  font-family: "Inter-semibold";
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 0.75rem;
+}
+
+footer p {
+  font-size: 16px;
+  font-family: "SourceSerif-regular";
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 1rem;
+}
+
+.info-naturally p {
+  font-family: "SourceSerif-regular";
+  font-weight: 400;
+  margin-top: 0.25rem;
+  margin-bottom: 2rem;
+  line-height: 24px;
+}
+
+.hamburger-contact h2 {
+  font-family: "Inter-semibold";
+  font-size: 24px;
+}
+
+.hamburger-contact p {
+  font-family: "SourceSerif-regular";
+  font-size: 16px;
+  line-height: 20px;
 }
