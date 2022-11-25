@@ -89,6 +89,8 @@ h2 {
   margin-bottom: 1rem;
 }
 
+/* <!--SEKTION NYHETER--> */
+
 .news-banner h1 {
   font-family: "Inter";
   font-weight: 300;
@@ -131,12 +133,24 @@ h2 {
   left: 1.25rem;
 }
 
+/*<!-- INFO-SEKTION om pop-up-event -->*/
+
 .info-section h1 {
   font-family: "Inter";
   font-weight: 400;
   font-size: 44px;
   line-height: 40px;
   margin-bottom: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .info-section h1 {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 92px;
+    line-height: 98px;
+    margin-bottom: 1.75rem;
+  }
 }
 
 .info-section p {
@@ -155,6 +169,8 @@ h2 {
   line-height: 20px;
   margin-bottom: 0.5rem;
 }
+
+/* <!--SEKTION NYHETER--> */
 
 .text h2 {
   font-family: "Inter";
@@ -179,6 +195,8 @@ h2 {
   line-height: 20px;
   margin-bottom: 1rem;
 }
+
+/*  <!-- FOOTER -->*/
 
 footer h2 {
   font-family: "Inter";
