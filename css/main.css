@@ -301,19 +301,13 @@
   object-position: center;
 }
 
-@media screen and (min-width: 768px) {
-  .large-product-info-1st,
-  .large-product-info-2nd {
-    display: block;
-  }
-}
-
 /*Textrutor med produktbeskrivningar*/
 .large-product-info-1st,
 .large-product-info-2nd {
   display: none;
   width: 50%;
   height: auto;
+  padding: 3rem 1.75rem 2.25rem 1.75rem;
 }
 
 @media screen and (min-width: 768px) {
