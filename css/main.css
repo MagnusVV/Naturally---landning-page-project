@@ -153,6 +153,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  left: -400px;
+  -webkit-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+
+/* Toggled State */
+.opened {
+  left: 0;
 }
 
 /* Email-input field in naturally-pop-up*/
