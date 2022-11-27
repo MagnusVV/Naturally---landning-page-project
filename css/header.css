@@ -72,6 +72,7 @@
 
 .choose-lang-drop-down {
   position: relative;
+  color: var(--caffe-mocha);
 }
 
 .drop-down {
@@ -83,6 +84,16 @@
 
 .choose-lang-drop-down:hover .drop-down {
   display: block;
+}
+
+.choose-lang-drop-down span {
+  font-family: "Inter-medium";
+  font-size: 20px;
+}
+
+.choose-lang-drop-down p {
+  font-family: "Inter-medium";
+  font-size: 16px;
 }
 
 /*Logotypen och dess behållare --->*/

@@ -31,12 +31,13 @@
     height: 3rem;
     margin: 0.17rem;
     text-align: center;
-    font-family: "Inter";
+    font-family: "Inter-medium";
     font-weight: 500;
     font-size: 20px;
   }
   .nav-menu.active {
     left: 0;
+    color: var(--caffe-mocha);
   }
 
   .logo-hamburger {
@@ -93,6 +94,22 @@
     margin-right: 0.5rem;
     cursor: pointer;
   }
-}
 
-/* Hamburgar-menyn, pop-in */
+  div.img-container-hamburger span {
+    font-family: "Inter-medium";
+    font-size: 20px;
+  }
+
+  .hamburger-contact h2 {
+    font-family: "Inter-semibold";
+    font-size: 24px;
+    margin-bottom: 0.75rem;
+  }
+
+  .hamburger-contact p {
+    font-family: "SourceSerif-regular";
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0.4rem;
+  }
+}

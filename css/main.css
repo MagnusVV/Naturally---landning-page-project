@@ -1,4 +1,4 @@
-/* Diven för sökfältet och menyknapparna högst upp*/
+/* Behållaren för sökfältet och menyknapparna högst upp*/
 .menu-and-top-searchfield-bar {
   height: 3rem;
   background-color: var(--latte-macchiato);
@@ -56,15 +56,14 @@
 .top-menu-button {
   width: 100%;
   height: 100%;
-  font-size: var(--CTA-inter-big-mobile);
+  font-family: "Inter-medium";
+  font-size: 24px;
   color: var(--caffe-mocha);
   border-color: var(--latte-macchiato);
   border-top: none;
   border-bottom: none;
   border-style: solid;
-
   background-color: white;
-  font-weight: 300;
   display: none;
   cursor: pointer;
 }
@@ -171,12 +170,29 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+
+  /*   -SKA NEDAN TAS BORT?
+  
   left: -400px;
   -webkit-transition: left 0.5s ease;
-  transition: left 0.5s ease;
+  transition: left 0.5s ease; */
 }
 
-/* Toggled State */
+@media screen and (min-width: 768px) {
+  .info-section {
+    height: auto;
+    padding: 2.875rem 2rem 2.875rem 2rem;
+    background-color: var(--latte-macchiato);
+    color: var(--caffe-mocha);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+/* Toggled State -VAD ÄR DETTA? */
 .opened {
   left: 0;
 }
@@ -189,6 +205,15 @@
   height: 2.5rem;
   border: none;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .email-input-field {
+    width: 96%;
+    max-width: 40rem;
+    border-radius: 48px;
+    height: 3.75rem;
+  }
 }
 
 .info-section h1 {
@@ -209,21 +234,55 @@
   }
 }
 
+.info-section span {
+  font-family: "Inter-regular";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 1.8rem;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .info-section span {
+    display: inline;
+  }
+}
+
 .info-section p {
   font-family: "SourceSerif-medium";
   font-weight: 500;
   font-size: 12px;
-
   line-height: 16px;
   margin-bottom: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .info-section p {
+    font-family: "SourceSerif-medium";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 2.5rem;
+  }
+}
+
 .info-section h2 {
-  font-family: "Inter-light";
-  font-weight: 300;
+  font-family: "Inter-regular";
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .info-section h2 {
+    font-family: "Inter-regular";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 1.5rem;
+  }
 }
 
 /* <--- --- */
@@ -251,7 +310,7 @@
   height: auto;
 }
 
-.news-banner h1 {
+.news-banner h2 {
   font-family: "Inter-light";
   /* Font-weight måste läggas till manuellt här av någon anledning*/
   font-weight: 300;
@@ -263,8 +322,18 @@
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .news-banner h2 {
+    font-family: "Inter-light";
+    font-size: 64px;
+    text-align: center;
+    line-height: 6.5rem;
+    position: relative;
+  }
+}
+
 /* Linjerna kring "Nyheter" */
-.news-banner h1:before {
+.news-banner h2:before {
   font-family: "Inter-light";
   content: "";
   display: block;
@@ -278,7 +347,7 @@
   position: absolute;
 }
 
-.news-banner h1:after {
+.news-banner h2:after {
   font-family: "Inter-light";
   content: "";
   display: block;
@@ -295,12 +364,15 @@
 /* Bildbehållare med sidoscrollsfuktion */
 .products-img-slider {
   height: 14.25rem;
+  width: 100%;
   padding: 0rem 1rem 0rem 1rem;
   margin-top: 0;
   display: flex;
+  justify-content: space-between;
   flex-wrap: nowrap;
-  overflow-x: auto;
   column-gap: 0.5rem;
+  overflow-x: auto;
+  /* column-gap: 0.5rem; */
 }
 
 @media screen and (min-width: 768px) {
@@ -317,9 +389,11 @@
   /*   height: 14.25rem;*/
   /*   Height minskad till 14 rem för att få bort studsen i höjdled */
   height: 14rem;
-  width: 10.625rem;
+  /*   width: 10.625rem; */
+  width: auto;
   flex: 0 0 auto;
   position: relative;
+  color: var(--espresso);
 }
 
 @media screen and (min-width: 768px) {
@@ -340,7 +414,7 @@
   font-family: "SourceSerif-medium";
   font-weight: 500;
   font-size: 16px;
-  color: var(--espresso);
+
   position: absolute;
   top: 0.5rem;
   left: 0.5rem;
@@ -350,20 +424,32 @@
   font-family: "SourceSerif-light";
   font-weight: 300;
   font-size: 16px;
-  color: var(--espresso);
+
   position: absolute;
   top: 1.75rem;
   left: 0.5rem;
 }
 
-.large-product-img-container-1st h1,
-.large-product-img-container-2nd h1 {
-  font-family: "Inter-light";
-  font-weight: 300;
-  font-size: 36px;
-  position: absolute;
-  top: 1.25rem;
-  left: 1.25rem;
+@media screen and (min-width: /* 768px */ 1024px) {
+  /* 768px funkar inte bra storleksmässigt */
+  .product-img-slider-container h4 {
+    font-family: "SourceSerif-medium";
+    font-weight: 500;
+    font-size: 32px;
+
+    position: absolute;
+    top: 1.25rem;
+    left: 1rem;
+  }
+
+  .product-img-slider-container p {
+    font-family: "SourceSerif-light";
+    font-weight: 300;
+    font-size: 32px;
+    position: absolute;
+    top: 3.5rem;
+    left: 1rem;
+  }
 }
 
 /* <!--SEKTION LARGE PRODUCT IMAGES--> */
@@ -406,19 +492,78 @@
   object-position: center;
 }
 
+.large-product-img-container-1st h2,
+.large-product-img-container-2nd h2 {
+  font-family: "Inter-light";
+  font-weight: 300;
+  font-size: 36px;
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .large-product-img-container-1st h2,
+  .large-product-img-container-2nd h2 {
+    visibility: hidden;
+  }
+}
+
 /*Textrutor med produktbeskrivningar*/
 .large-product-info-1st,
 .large-product-info-2nd {
   display: none;
   width: 100%;
   height: auto;
-  padding: 3rem 1.75rem 2.25rem 1.75rem;
+  padding: 3rem 1.75rem 7rem 1.75rem;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
   .large-product-info-1st,
   .large-product-info-2nd {
     display: block;
+  }
+}
+
+.large-product-info-1st h2,
+.large-product-info-2nd h2 {
+  font-family: "Inter-light";
+  font-weight: 300;
+  font-size: 36px;
+  margin-bottom: 3rem;
+  /*   font-size: 50px;
+  margin-bottom: 4.2rem; */
+}
+
+.large-product-info-1st p,
+.large-product-info-2nd p {
+  font-family: "SourceSerif-regular";
+  font-size: 16px;
+  line-height: 20px;
+  /* font-size: 24px;
+  line-height: 29px; */
+}
+
+@media screen and (min-width: /* 768px */ 1024px) {
+  /* 768px funkar inte bra storleksmässigt */
+  .large-product-info-1st h2,
+  .large-product-info-2nd h2 {
+    font-family: "Inter-light";
+    font-weight: 300;
+    /*     font-size: 64px;
+    margin-bottom: 5.625rem; */
+    font-size: 50px;
+    margin-bottom: 4.2rem;
+  }
+
+  .large-product-info-1st p,
+  .large-product-info-2nd p {
+    font-family: "SourceSerif-regular";
+    /* font-size: 32px;
+    line-height: 38px; */
+    font-size: 24px;
+    line-height: 29px;
   }
 }
 
@@ -449,7 +594,6 @@
   /* border: none;
   background-color: var(--cappuccino); */
   background-color: white;
-
   position: absolute;
   bottom: 1.25rem;
   right: 1.25rem;
@@ -468,6 +612,33 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   cursor: pointer;
 }
+
+@media screen and (min-width: /* 768px */ 1024px) {
+  /* 768px funkar inte bra storleksmässigt */
+  .button-clothes {
+    width: 18rem;
+    height: 4.25rem;
+    font-family: "Inter-medium";
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--espresso);
+    border-radius: 2.5rem;
+    /* border: none;
+    background-color: var(--cappuccino); */
+    background-color: white;
+    position: absolute;
+    bottom: 1.75rem;
+    right: 2.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .large-product-img-container-1st .button-clothes,
+  .large-product-img-container-2nd .button-clothes {
+    display: none;
+  }
+}
+
 /* <--- --- */
 
 /* <!-- TEXT-SEKTION om rekrytering--> */
@@ -490,6 +661,7 @@
   .text {
     margin-top: 5rem;
     margin-bottom: 5rem;
+    padding: 2.875rem 2rem 2.875rem 2rem;
   }
 }
 
@@ -504,6 +676,20 @@
   background-color: white;
 }
 
+@media screen and (min-width: /* 768px */ 1024px) {
+  /* 768px funkar inte bra storleksmässigt */
+  .button-text {
+    width: 18.7rem;
+    height: 4.25rem;
+    font-family: "Inter-medium";
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--espresso);
+    border-radius: 2.5rem;
+    background-color: white;
+  }
+}
+
 .text h2 {
   font-family: "Inter-semibold";
   font-weight: 600;
@@ -511,12 +697,33 @@
   line-height: 28px;
   margin-bottom: 0.5rem;
 }
+
+@media screen and (min-width: 768px) {
+  .text h2 {
+    font-family: "Inter-semibold";
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 1rem;
+  }
+}
+
 .text h3 {
   font-family: "Inter-medium";
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .text h3 {
+    font-family: "Inter-medium";
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .text p {
@@ -527,38 +734,12 @@
   margin-bottom: 1rem;
 }
 
-/*  <!-- FOOTER -->*/
-
-footer h2 {
-  font-family: "Inter-semibold";
-  font-size: 24px;
-  line-height: 28px;
-  margin-bottom: 0.75rem;
-}
-
-footer p {
-  font-size: 16px;
-  font-family: "SourceSerif-regular";
-  font-weight: 400;
-  line-height: 20px;
-  margin-bottom: 1rem;
-}
-
-.info-naturally p {
-  font-family: "SourceSerif-regular";
-  font-weight: 400;
-  margin-top: 0.25rem;
-  margin-bottom: 2rem;
-  line-height: 24px;
-}
-
-.hamburger-contact h2 {
-  font-family: "Inter-semibold";
-  font-size: 24px;
-}
-
-.hamburger-contact p {
-  font-family: "SourceSerif-regular";
-  font-size: 16px;
-  line-height: 20px;
+@media screen and (min-width: 768px) {
+  .text p {
+    font-family: "SourceSerif-regular";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 1.5rem;
+  }
 }
