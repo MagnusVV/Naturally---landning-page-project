@@ -1,0 +1,170 @@
+/* I footer container för tre divar information/paymeny/contact*/
+
+footer {
+  color: var(--caffe-mocha);
+}
+
+.contact-info {
+  height: 36rem;
+  background-color: var(--latte-macchiato);
+  margin-bottom: 0.125rem;
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-info {
+    height: auto;
+    padding: 3.25rem 2rem 0rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    /* column-gap: 11.3%; */
+  }
+
+  .newsletter {
+    order: 1;
+    width: 32%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .info-naturally {
+    order: 0;
+    width: 32%;
+  }
+
+  .contact {
+    width: 32%;
+  }
+}
+
+footer h2 {
+  font-family: "Inter-semibold";
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 0.75rem;
+}
+
+footer p {
+  font-family: "SourceSerif-regular";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.info-naturally p {
+  font-family: "SourceSerif-regular";
+  font-weight: 400;
+  margin-top: 0.25rem;
+  margin-bottom: 2rem;
+  line-height: 24px;
+}
+
+@media screen and (min-width: /* 768px */ 1024px) {
+  /* 768px funkar inte bra storleksmässigt */
+  footer h2 {
+    font-family: "Inter-semibold";
+    font-size: 32px;
+    line-height: 36px;
+    /*     font-size: 40px;
+    line-height: 44px; */
+    margin-bottom: 2rem;
+  }
+
+  .newsletter h2 {
+    margin-bottom: 1rem;
+  }
+
+  footer p {
+    font-family: "SourceSerif-regular";
+    font-size: 22px;
+    line-height: 26px;
+    /*     font-size: 28px;
+    line-height: 32px; */
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  .info-naturally p {
+    margin-top: 0.25rem;
+    line-height: 38px;
+    /*     line-height: 38px; */
+  }
+}
+
+.bottom-email-input-field {
+  width: 100%;
+  max-width: 24.75rem;
+  border-radius: 48px;
+  height: 2.5rem;
+  margin: auto;
+  margin-top: 0.75rem;
+  display: block;
+  border: none;
+  padding-left: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .bottom-email-input-field {
+    min-width: 100%;
+    /* max-width: 26rem; */
+    border-radius: 48px;
+    height: 3.25rem;
+    margin: 0;
+    margin-top: 0.75rem;
+    display: block;
+    border: none;
+    padding-left: 30px;
+  }
+}
+
+/* Sociala medier-ikoner */
+
+.footer-sm-icons {
+  max-width: 24.75rem;
+  padding: 1.5rem 3.7rem 2.25rem 3.7rem;
+  /*   padding: 1.5rem 1rem 2.25rem 1rem; */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-sm-icons {
+    width: 20.75rem;
+    gap: 10%;
+    padding: 4rem 1rem 2.25rem 1rem;
+  }
+}
+
+/* Här är det lagom att sociala medier-ikoner blir större. */
+@media screen and (min-width: 1024px) {
+  .footer-sm-icons img {
+    width: 125%;
+  }
+}
+
+/* Allra längst ner i footer: payment-grejer*/
+.payment {
+  height: 5.375rem;
+  padding: 1rem 1.75rem 0rem 1.75rem;
+  background-color: var(--latte-macchiato);
+  display: flex;
+  justify-content: center;
+  gap: 3.2%;
+}
+
+.payment > div img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .payment {
+    height: 6.25rem;
+    padding: 1rem 2rem 0rem 2rem;
+  }
+}

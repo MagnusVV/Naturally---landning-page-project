@@ -1,0 +1,78 @@
+/* Mall för font-face:
+ @font-face {
+  font-family: "Inter-regular";
+  src: local(), url() format(), url() format();
+  font-weight: 400;
+} */
+
+/* Inter-regular*/
+@font-face {
+  font-family: "Inter-regular";
+  src: url("./fonts/Inter-Regular.woff") format("woff"),
+    url("./fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+/* Inter-light*/
+@font-face {
+  font-family: "Inter-light";
+  src: url("/css/fonts/Inter-Light.woff2") format("woff2"),
+    url("/css/fonts/Inter-Light.woff") format("woff");
+  font-weight: 300;
+}
+
+/*Inter-medium*/
+@font-face {
+  font-family: "Inter-medium";
+  src: url("/css/fonts/Inter-Medium.woff2") format("woff2"),
+    url("/css/fonts/Inter-Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+/* Inter-SemiBold*/
+@font-face {
+  font-family: "Inter-semibold";
+  src: url("/css/fonts/Inter-SemiBold.woff2") format("woff2"),
+    url("/css/fonts/Inter-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+
+/* SourceSerif-Regular*/
+@font-face {
+  font-family: "SourceSerif-regular";
+  src: url("/css/fonts/SourceSerif4-Regular.woff2") format("woff2"),
+    url("/css/fonts/SourceSerif4-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+/* SourceSerif-Light*/
+@font-face {
+  font-family: "SourceSerif-light";
+  src: url("/css/fonts/SourceSerif4-Light.woff2") format("woff2"),
+    url("/css/fonts/SourceSerif4-Light.woff") format("woff");
+  font-weight: 300;
+}
+
+/* SourceSerif-Medium*/
+@font-face {
+  font-family: "SourceSerif-medium";
+  src: url("/css/fonts/SourceSerif4-Medium.woff2") format("woff2"),
+    url("/css/fonts/SourceSerif4-Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+/* SourceSerif-SemiBold*/
+@font-face {
+  font-family: "SourceSerif-semibold";
+  src: url("/css/fonts/SourceSerif4-SemiBold.woff2") format("woff2"),
+    url("/css/fonts/SourceSerif4-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+
+/* h2 {
+  all: unset;
+} */
+
+/* h1 {
+  all: unset;
+} */

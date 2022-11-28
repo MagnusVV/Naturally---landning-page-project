@@ -1,0 +1,190 @@
+/* Nav-delen med Hamburger-meny, loggan och CTA-ikoner*/
+.navbar {
+  height: 5rem;
+  padding: 2.25rem 1.5rem 1rem 1.5rem;
+  background-color: var(--latte-macchiato);
+  display: grid;
+  grid-template: 1.85rem / 12.4% [hamburger] 0% [globe] 57.6% [logotype] 10.8% [profile] 10.5% [like] 8.7% [shopping-cart];
+  align-items: center;
+  justify-items: end;
+}
+
+.choose-lang-drop-down,
+.drop-down,
+.CTA-icon {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    height: 5.6rem;
+    padding: 1.7rem 2rem 0.75rem 2rem;
+    grid-template: 1fr / 0% [hamburger] 23.4% [globe] 53.2% [logotype] 14.7% [profile] 4.7% [like] 4% [shopping-cart];
+  }
+}
+
+.navbar :nth-child(2) {
+  justify-self: start;
+}
+
+.navbar :nth-child(3) {
+  justify-self: start;
+}
+
+/*Rullgardinsmeny för att välja språk*/
+
+.choose-lang {
+  visibility: hidden;
+  width: fit-content;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .choose-lang {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.25rem;
+  }
+}
+
+/*Globen*/
+.CTA-icon-globe {
+  width: min-content;
+}
+
+/*Globen vid +mobilstorlek*/
+@media screen and (min-width: 768px) {
+  .CTA-icon-globe {
+    width: 32px;
+  }
+}
+
+/*Globen vid desktopstorlek*/
+@media screen and (min-width: 1024px) {
+  .CTA-icon-globe {
+    width: 36px;
+  }
+}
+
+/*Själva rullgardinsmenyn (hover i detta fall)*/
+
+.choose-lang-drop-down {
+  position: relative;
+  color: var(--caffe-mocha);
+}
+
+.drop-down {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: auto;
+}
+
+.choose-lang-drop-down:hover .drop-down {
+  display: block;
+}
+
+.choose-lang-drop-down span {
+  font-family: "Inter-medium";
+  font-size: 20px;
+}
+
+.choose-lang-drop-down p {
+  font-family: "Inter-medium";
+  font-size: 16px;
+}
+
+/*Logotypen och dess behållare --->*/
+.navbar :nth-child(4) {
+  justify-self: start;
+}
+
+.navbar :nth-child(4) img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar :nth-child(4) {
+    justify-self: center;
+  }
+  .navbar :nth-child(4) img {
+    width: 275px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar :nth-child(4) img {
+    width: 363px;
+    height: auto;
+  }
+}
+
+/* <--- --- --- --- */
+
+/*CTA-ikonerna vid +mobil-storlek*/
+@media screen and (min-width: 768px) {
+  .navbar :nth-child(5) img,
+  .navbar :nth-child(6) img,
+  .navbar :nth-child(7) img {
+    width: 125%;
+    float: right;
+  }
+}
+
+/*CTA-ikonerna vid desktop-storlek*/
+@media screen and (min-width: 1024px) {
+  .navbar :nth-child(5) img,
+  .navbar :nth-child(6) img,
+  .navbar :nth-child(7) img {
+    width: 150%;
+    float: right;
+  }
+}
+
+/* Hamburgar-menyns komponenter ---> */
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--caffe-mocha);
+  text-decoration: none;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+}
+
+.hamburger-menu {
+  overflow: hidden;
+  display: none;
+  cursor: pointer;
+}
+.logo-hamburger,
+.hamburger-contact {
+  overflow: hidden;
+  display: none;
+}
+
+/* <--- --- --- --- */
