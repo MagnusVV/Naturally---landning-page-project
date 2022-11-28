@@ -35,3 +35,13 @@ signUpField.addEventListener("keyup", (submit) => {
     signUpField.value = "";
   }
 });
+
+/* KOLLA VARFÖR DETTA INTE FUNKAR*/
+const signUpFieldSecond = document.querySelector(".bottom-email-input-field");
+
+signUpFieldSecond.addEventListener("keyup", (submit) => {
+  if (submit.key === "Enter") {
+    console.log(submit.target.value);
+    signUpField.value = "";
+  }
+});

@@ -626,14 +626,16 @@ background-color: var(--cappuccino); */
 /* After you pressed the button */
 .button-clothes:active,
 .text-clothes:active,
-.button-text:active {
+.button-text:active,
+.submit:active {
   background-color: var(--caffe-mocha);
   color: white;
 }
 /* Hover over button */
 .button-clothes:hover,
 .text-clothes:hover,
-.button-text:hover {
+.button-text:hover,
+.submit:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   cursor: pointer;
 }
