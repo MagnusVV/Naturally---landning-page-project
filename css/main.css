@@ -43,7 +43,8 @@
   height: 2rem;
   border: none;
   padding-left: 44px;
-  font-size: var(--P1-inter-regular-mobile);
+  font-size: 20px;
+  color: var(--caffe-correto);
   font-family: "source serif 4";
 }
 
@@ -204,6 +205,9 @@
   border-radius: 48px;
   height: 2.5rem;
   border: none;
+  font-family: "Inter-medium";
+  color: var(--caffe-correto);
+  font-size: 16px;
   text-align: center;
 }
 
@@ -213,6 +217,7 @@
     max-width: 40rem;
     border-radius: 48px;
     height: 3.75rem;
+    font-size: 24px;
   }
 }
 
@@ -250,10 +255,10 @@
 }
 
 .info-section p {
-  font-family: "SourceSerif-medium";
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
+  font-family: "Inter-regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   margin-bottom: 1rem;
 }
 
@@ -263,6 +268,8 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 40px;
+    /*     font-size: 24px;
+    line-height: 30px; */
     margin-bottom: 2.5rem;
   }
 }
@@ -435,7 +442,9 @@
   .product-img-slider-container h4 {
     font-family: "SourceSerif-medium";
     font-weight: 500;
-    font-size: 32px;
+    font-size: 24px;
+    /*     font-weight: 500;
+    font-size: 32px; */
 
     position: absolute;
     top: 1.25rem;
@@ -445,7 +454,9 @@
   .product-img-slider-container p {
     font-family: "SourceSerif-light";
     font-weight: 300;
-    font-size: 32px;
+    font-size: 24px;
+    /*     font-weight: 300;
+    font-size: 32px; */
     position: absolute;
     top: 3.5rem;
     left: 1rem;
