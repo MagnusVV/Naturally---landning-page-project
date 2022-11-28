@@ -99,6 +99,25 @@
     text-align: left;
     margin-left: 18.4%;
   }
+
+  .submit {
+    display: none;
+  }
+}
+
+/* Knapp event-post email*/
+.submit {
+  margin-top: 1rem;
+  width: 9.6rem;
+  height: 2.75rem;
+  font-family: "Inter-medium";
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--espresso);
+  border-radius: 2.5rem;
+  /* border: none;
+background-color: var(--cappuccino); */
+  background-color: white;
 }
 
 /* Behållare för ikonerna i nav-bar och footer*/
@@ -191,11 +210,6 @@
     align-items: center;
     justify-content: space-around;
   }
-}
-
-/* Toggled State -VAD ÄR DETTA? */
-.opened {
-  left: 0;
 }
 
 /* Email-input field in naturally-pop-up*/

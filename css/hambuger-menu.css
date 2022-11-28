@@ -117,4 +117,7 @@
     font-family: "Inter-medium";
     font-size: 16px;
   }
+  .opened {
+    left: 0;
+  }
 }
