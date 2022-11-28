@@ -112,4 +112,9 @@
     line-height: 20px;
     margin-bottom: 0.4rem;
   }
+
+  .img-container-hamburger a {
+    font-family: "Inter-medium";
+    font-size: 16px;
+  }
 }
