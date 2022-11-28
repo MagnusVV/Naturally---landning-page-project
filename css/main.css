@@ -1,0 +1,745 @@
+/* Behållaren för sökfältet och menyknapparna högst upp*/
+.menu-and-top-searchfield-bar {
+  height: 3rem;
+  background-color: var(--latte-macchiato);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-and-top-searchfield-bar {
+    height: 3.2rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.field-looking-glass-container {
+  min-width: fit-content;
+  width: 23.75rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sökfältet försvinner och ger plats åt meny-knappar*/
+@media screen and (min-width: 768px) {
+  .field-looking-glass-container {
+    display: none;
+  }
+}
+
+/* Sökfältet */
+.top-searchfield {
+  width: 96%;
+  max-width: 23.75rem;
+  border-radius: 40px;
+  height: 2rem;
+  border: none;
+  padding-left: 44px;
+  font-size: var(--P1-inter-regular-mobile);
+  font-family: "source serif 4";
+}
+
+.search-icon {
+  position: absolute;
+  left: 6%;
+}
+
+/* Knapparna som ersätter sökfältet vid desktop-storlek */
+.top-menu-button {
+  width: 100%;
+  height: 100%;
+  font-family: "Inter-medium";
+  font-size: 24px;
+  color: var(--caffe-mocha);
+  border-color: var(--latte-macchiato);
+  border-top: none;
+  border-bottom: none;
+  border-style: solid;
+  background-color: white;
+  display: none;
+  cursor: pointer;
+}
+
+/* Behållare för att kunna lägga in sök-symbolen här */
+.search-button {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: none;
+}
+
+/* Knapparna blir synliga vid +mobilbredd */
+@media screen and (min-width: 768px) {
+  .top-menu-button {
+    display: inline-block;
+  }
+
+  .top-menu-button:active {
+    background-color: var(--caffe-mocha);
+    color: white;
+  }
+  .top-menu-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .search-button {
+    display: flex;
+    text-align: left;
+    align-items: center;
+  }
+  .search-button .top-menu-button p {
+    text-align: left;
+    margin-left: 18.4%;
+  }
+}
+
+/* Behållare för ikonerna i nav-bar och footer*/
+.icon-container {
+  min-width: 1%;
+  width: auto;
+}
+
+.icon-container img {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* <!-- HERO-SEKTION --> */
+.hero {
+  /* height: 26.75rem; */
+  max-height: fit-content;
+  /* margin-bottom: 0.5rem; */
+  margin-bottom: 0.25rem;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    margin-bottom: 1.375rem;
+  }
+}
+
+.hero-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 1.25rem 1rem 0rem 1rem;
+  position: absolute;
+}
+
+.hero-container p {
+  font-size: 20px;
+  font-family: "SourceSerif-light";
+  line-height: 20px;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  width: auto;
+}
+
+/* Kretsloppsymbol */
+.hero-container .icon-container {
+  justify-self: end;
+}
+
+.hero picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* <!-- INFO-SEKTION om pop-up-event -->*/
+.info-section {
+  height: auto;
+  padding: 1.25rem 1rem 1.25rem 1rem;
+  background-color: var(--latte-macchiato);
+  color: var(--caffe-mocha);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  /*   -SKA NEDAN TAS BORT?
+  
+  left: -400px;
+  -webkit-transition: left 0.5s ease;
+  transition: left 0.5s ease; */
+}
+
+@media screen and (min-width: 768px) {
+  .info-section {
+    height: auto;
+    padding: 2.875rem 2rem 2.875rem 2rem;
+    background-color: var(--latte-macchiato);
+    color: var(--caffe-mocha);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+/* Toggled State -VAD ÄR DETTA? */
+.opened {
+  left: 0;
+}
+
+/* Email-input field in naturally-pop-up*/
+.email-input-field {
+  width: 96%;
+  max-width: 23.75rem;
+  border-radius: 48px;
+  height: 2.5rem;
+  border: none;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .email-input-field {
+    width: 96%;
+    max-width: 40rem;
+    border-radius: 48px;
+    height: 3.75rem;
+  }
+}
+
+.info-section h1 {
+  font-family: "Inter-regular";
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 40px;
+  margin-bottom: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .info-section h1 {
+    font-family: "Inter-regular";
+    font-weight: 400;
+    font-size: 92px;
+    line-height: 98px;
+    margin-bottom: 1.75rem;
+  }
+}
+
+.info-section span {
+  font-family: "Inter-regular";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 1.8rem;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .info-section span {
+    display: inline;
+  }
+}
+
+.info-section p {
+  font-family: "SourceSerif-medium";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .info-section p {
+    font-family: "SourceSerif-medium";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.info-section h2 {
+  font-family: "Inter-regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .info-section h2 {
+    font-family: "Inter-regular";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* <--- --- */
+
+/* <!--SEKTION NYHETER -->*/
+
+/* Nyheter + sidoscroller*/
+.news-section {
+  background-color: white;
+  height: auto;
+  display: grid;
+  grid-template: 6.5rem 14.25rem / 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .news-section {
+    grid-template: 13.25rem auto / 100%;
+  }
+}
+
+.news-banner {
+  color: var(--espresso);
+  height: auto;
+}
+
+.news-banner h2 {
+  font-family: "Inter-light";
+  /* Font-weight måste läggas till manuellt här av någon anledning*/
+  font-weight: 300;
+  font-size: 36px;
+  text-align: center;
+  line-height: 6.5rem;
+
+  /*position: relative för att kunna måtta in linjer från sidan mot texten. */
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .news-banner h2 {
+    font-family: "Inter-light";
+    font-size: 64px;
+    text-align: center;
+    line-height: 6.5rem;
+    position: relative;
+  }
+}
+
+/* Linjerna kring "Nyheter" */
+.news-banner h2:before {
+  font-family: "Inter-light";
+  content: "";
+  display: block;
+  width: 31.5%;
+  height: 2px;
+  background: var(--espresso);
+  left: 0;
+  top: 50%;
+
+  /*position: absolute mot h1-taggen för att kunna måtta in linjer från sidan mot texten. */
+  position: absolute;
+}
+
+.news-banner h2:after {
+  font-family: "Inter-light";
+  content: "";
+  display: block;
+  width: 31.5%;
+  height: 2px;
+  background: var(--espresso);
+  right: 0;
+  top: 50%;
+
+  /*Samma här*/
+  position: absolute;
+}
+
+/* Bildbehållare med sidoscrollsfuktion */
+.products-img-slider {
+  height: 14.25rem;
+  width: 100%;
+  padding: 0rem 1rem 0rem 1rem;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  column-gap: 0.5rem;
+  overflow-x: auto;
+  /* column-gap: 0.5rem; */
+}
+
+@media screen and (min-width: 768px) {
+  .products-img-slider {
+    height: auto;
+    padding: 0rem 2rem 0rem 2rem;
+    display: grid;
+    grid-template: auto / auto auto auto auto;
+    overflow-x: unset;
+  }
+}
+
+.product-img-slider-container {
+  /*   height: 14.25rem;*/
+  /*   Height minskad till 14 rem för att få bort studsen i höjdled */
+  height: 14rem;
+  /*   width: 10.625rem; */
+  width: auto;
+  flex: 0 0 auto;
+  position: relative;
+  color: var(--espresso);
+}
+
+@media screen and (min-width: 768px) {
+  .product-img-slider-container {
+    height: auto;
+    width: auto;
+  }
+}
+
+.sidescroll-product-img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.product-img-slider-container h4 {
+  font-family: "SourceSerif-medium";
+  font-weight: 500;
+  font-size: 16px;
+
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+.product-img-slider-container p {
+  font-family: "SourceSerif-light";
+  font-weight: 300;
+  font-size: 16px;
+
+  position: absolute;
+  top: 1.75rem;
+  left: 0.5rem;
+}
+
+@media screen and (min-width: /* 768px */ 1024px) {
+  /* 768px funkar inte bra storleksmässigt */
+  .product-img-slider-container h4 {
+    font-family: "SourceSerif-medium";
+    font-weight: 500;
+    font-size: 32px;
+
+    position: absolute;
+    top: 1.25rem;
+    left: 1rem;
+  }
+
+  .product-img-slider-container p {
+    font-family: "SourceSerif-light";
+    font-weight: 300;
+    font-size: 32px;
+    position: absolute;
+    top: 3.5rem;
+    left: 1rem;
+  }
+}
+
+/* <!--SEKTION LARGE PRODUCT IMAGES--> */
+
+.large-product-img-section {
+  margin-top: 1.25rem;
+  padding: 0rem 1rem 0rem 1rem;
+  /* height: 65.75rem; */
+  height: auto;
+  display: grid;
+  grid-template: auto auto 0 0 / auto;
+  row-gap: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .large-product-img-section {
+    margin-top: 1.625rem;
+    padding: 0rem 2rem 0rem 2rem;
+    row-gap: 0.5rem;
+    grid-template: 1fr 1fr / 1fr 1fr;
+  }
+}
+
+/* Två klädesplagg-lådorna*/
+.large-product-img-container-1st,
+.large-product-img-container-2nd {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  /* margin: 0rem 1rem 0rem 1rem; */
+  background-color: #eaeaea;
+  position: relative;
+}
+
+.large-product-img-container-1st img,
+.large-product-img-container-2nd img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.large-product-img-container-1st h2,
+.large-product-img-container-2nd h2 {
+  font-family: "Inter-light";
+  font-weight: 300;
+  font-size: 36px;
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .large-product-img-container-1st h2,
+  .large-product-img-container-2nd h2 {
+    visibility: hidden;
+  }
+}
+
+/*Textrutor med produktbeskrivningar*/
+.large-product-info-1st,
+.large-product-info-2nd {
+  display: none;
+  width: 100%;
+  height: auto;
+  padding: 3rem 1.75rem 7rem 1.75rem;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .large-product-info-1st,
+  .large-product-info-2nd {
+    display: block;
+  }
+}
+
+.large-product-info-1st h2,
+.large-product-info-2nd h2 {
+  font-family: "Inter-light";
+  font-weight: 300;
+  font-size: 36px;
+  margin-bottom: 3rem;
+  /*   font-size: 50px;
+  margin-bottom: 4.2rem; */
+}
+
+.large-product-info-1st p,
+.large-product-info-2nd p {
+  font-family: "SourceSerif-regular";
+  font-size: 16px;
+  line-height: 20px;
+  /* font-size: 24px;
+  line-height: 29px; */
+}
+
+@media screen and (min-width: /* 768px */ 1024px) {
+  /* 768px funkar inte bra storleksmässigt */
+  .large-product-info-1st h2,
+  .large-product-info-2nd h2 {
+    font-family: "Inter-light";
+    font-weight: 300;
+    /*     font-size: 64px;
+    margin-bottom: 5.625rem; */
+    font-size: 50px;
+    margin-bottom: 4.2rem;
+  }
+
+  .large-product-info-1st p,
+  .large-product-info-2nd p {
+    font-family: "SourceSerif-regular";
+    /* font-size: 32px;
+    line-height: 38px; */
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+/* Omkastning av elementens ordning för att de ska ligga korrekt vid desktop-storlek */
+@media screen and (min-width: 768px) {
+  .large-product-info-1st {
+    order: 1;
+  }
+  .large-product-info-2nd {
+    order: 2;
+  }
+  .large-product-img-container-1st {
+    order: 0;
+  }
+  .large-product-img-container-2nd {
+    order: 3;
+  }
+}
+
+.button-clothes {
+  width: 9.6rem;
+  height: 2.75rem;
+  font-family: "Inter-medium";
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--espresso);
+  border-radius: 2.5rem;
+  /* border: none;
+  background-color: var(--cappuccino); */
+  background-color: white;
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.25rem;
+}
+/* After you pressed the button */
+.button-clothes:active,
+.text-clothes:active,
+.button-text:active {
+  background-color: var(--caffe-mocha);
+  color: white;
+}
+/* Hover over button */
+.button-clothes:hover,
+.text-clothes:hover,
+.button-text:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: /* 768px */ 1024px) {
+  /* 768px funkar inte bra storleksmässigt */
+  .button-clothes {
+    width: 18rem;
+    height: 4.25rem;
+    font-family: "Inter-medium";
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--espresso);
+    border-radius: 2.5rem;
+    /* border: none;
+    background-color: var(--cappuccino); */
+    background-color: white;
+    position: absolute;
+    bottom: 1.75rem;
+    right: 2.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .large-product-img-container-1st .button-clothes,
+  .large-product-img-container-2nd .button-clothes {
+    display: none;
+  }
+}
+
+/* <--- --- */
+
+/* <!-- TEXT-SEKTION om rekrytering--> */
+
+.text {
+  height: auto;
+  background-color: var(--latte-macchiato);
+  color: var(--espresso);
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  padding: 1.25rem 1rem 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 2.875rem 2rem 2.875rem 2rem;
+  }
+}
+
+.button-text {
+  width: 11rem;
+  height: 2.75rem;
+  font-family: "Inter-medium";
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--espresso);
+  border-radius: 2.5rem;
+  background-color: white;
+}
+
+@media screen and (min-width: /* 768px */ 1024px) {
+  /* 768px funkar inte bra storleksmässigt */
+  .button-text {
+    width: 18.7rem;
+    height: 4.25rem;
+    font-family: "Inter-medium";
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--espresso);
+    border-radius: 2.5rem;
+    background-color: white;
+  }
+}
+
+.text h2 {
+  font-family: "Inter-semibold";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .text h2 {
+    font-family: "Inter-semibold";
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 1rem;
+  }
+}
+
+.text h3 {
+  font-family: "Inter-medium";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .text h3 {
+    font-family: "Inter-medium";
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.text p {
+  font-family: "SourceSerif-regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .text p {
+    font-family: "SourceSerif-regular";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 1.5rem;
+  }
+}

@@ -1,19 +1,29 @@
 // HAMBURGERMENYN
 
 const hamburgerMenu = document.querySelector(".hamburger-menu");
+const hamburgerMenuActive = document.querySelector(".hamburger-menu-active");
 const navMenu = document.querySelector(".nav-menu");
+const picture = document.querySelector(".logo-hamburger");
+const contact = document.querySelector(".hamburger-contact");
 
 hamburgerMenu.addEventListener("click", () => {
-  hamburgerMenu.classList.toggle("active");
   navMenu.classList.toggle("active");
+  picture.classList.toggle("active");
+  contact.classList.toggle("active");
 });
 
-document.querySelectorAll(".navlink").forEach((e) =>
-  e.addEventListener("click", () => {
-    hamburgerMenu.classList.remove("active");
-    navMenu.classList.remove("active");
-  })
-);
+hamburgerMenuActive.addEventListener("click", () => {
+  navMenu.classList.remove("active");
+  picture.classList.remove("active");
+  contact.classList.remove("active");
+});
+
+// document.querySelectorAll(".navlink").forEach((e) =>
+//   e.addEventListener("click", () => {
+//     hamburgerMenu.classList.remove("active");
+//     navMenu.classList.remove("active");
+//   })
+// );
 
 // E-MAILADRESSFÄLTET
 

@@ -1,0 +1,46 @@
+:root {
+  /* --h1-inter-light: 64px;
+  --h1-inter-regular: 92px;
+  --h2-inter-semi-bold: 40px;
+  --h2-inter-regular: 36px;
+  --h3-inter-regular: 32px;
+  --h3-inter-medium: 36px;
+  --h4-source-serif-semibold: 32px;
+  --P1-source-serif-regular: 32px;
+  --P2-source-serif-medium: 28px;
+  --CTA-inter-medium: 24px;
+  --CTA-big-inter-medium: 32px;
+  --P1-inter-regular: 24px;
+
+  --h1-inter-regular-mobile: 44px;
+  --h1-inter-light-mobile: 36px;
+  --h2-inter-semibold-mobile: 24px;
+  --h3-inter-medium-mobile: 16px;
+  --h2-inter-regular-mobile: 16px;
+  --P1-inter-regular-mobile: 12px;
+  --CTA-inter-medium-mobile: 16px;
+  --CTA-inter-big-mobile: 20px; */
+
+  --latte-macchiato: #eae6e1;
+  --cappuccino: #cfc5b6;
+  --caffe-correto: #837561;
+  --caffe-mocha: #492f11;
+  --espresso: #150c01;
+  --white: #ffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* html,
+body {
+  font-family: "Inter", sans-serif;
+} */
+
+body {
+  width: 100vw;
+  margin: 0;
+}

@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="fonts.css" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="hambuger-menu.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/typography.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/hambuger-menu.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="icon" href="./images/Favicon/favicon.ico" />
 
     <title>Naturally</title>
   </head>
@@ -22,8 +24,31 @@
     <!-- HEADER -->
 
     <header>
+      <!-- Navbar -->
+
       <nav class="navbar">
         <ul class="nav-menu">
+          <!-- Ska bara visas i hamburgar-menyn-->
+          <div class="img-container-hamburger">
+            <img
+              src="./images/Mobile/Naturally.svg"
+              alt="Naturally-logo."
+              class="logo-hamburger"
+            />
+            <div class="hamburger-menu-active">
+              <img
+                src="./images/mobile/Button/Hamburger-icon.svg"
+                class="menu-active"
+              />
+            </div>
+
+            <img
+              src="./images/Desktop/Button/globe.svg"
+              alt="choose language"
+              class="CTA-icon-globe-hamburger"
+            />
+            <span>EN</span>
+          </div>
           <li class="nav-item">
             <a href="#" class="navlink">Produkter</a>
           </li>
@@ -36,13 +61,46 @@
           <li class="nav-item">
             <a href="#" class="navlink">Erbjudanden</a>
           </li>
-        </ul>
-        <div class="hamburger-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
 
+          <div class="hamburger-contact">
+            <h2>Kontakta oss</h2>
+            <p>Naturally@naturally.com</p>
+            <p>+46 31 138 38 38</p>
+          </div>
+
+          <img
+            src="images/Mobile/mobile-logo.svg"
+            alt="logo naturally mobile"
+            class="logo-mobile"
+          />
+        </ul>
+
+        <!-- SEKTION Hamburgar-menyn -->
+
+        <section class="hamburger-section">
+          <div class="hamburger-menu">
+            <img src="./images/mobile/Button/Hamburger-icon.svg" class="menu" />
+          </div>
+        </section>
+
+        <!-- Logotypen och CTA-ikoner -->
+
+        <!-- Rullgardinsmeny för att välja språk -->
+        <div class="choose-lang">
+          <div class="icon-container">
+            <img
+              src="./images/Desktop/Button/globe.svg"
+              alt="choose language"
+              class="CTA-icon-globe"
+            />
+          </div>
+          <div class="choose-lang-drop-down">
+            <span>Svenska</span>
+            <div class="drop-down">
+              <p>English</p>
+            </div>
+          </div>
+        </div>
         <div class="icon-container">
           <img
             src="./images/Mobile/Naturally.svg"
@@ -73,15 +131,43 @@
         </div>
       </nav>
     </header>
+    <!-- Sökfält för mobil / menyknappar för desktop -->
+
+    <div class="menu-and-top-searchfield-bar">
+      <div class="field-looking-glass-container">
+        <img
+          src="images/Mobile/Icon/Looking_glass.svg"
+          class="search-icon"
+          aria-hidden="true"
+        />
+        <input type="search" class="top-searchfield" placeholder="Sök" />
+      </div>
+
+      <button class="top-menu-button">Produkter</button>
+      <button class="top-menu-button">Nyheter</button>
+      <button class="top-menu-button">Bästsäljare</button>
+      <button class="top-menu-button">Erbjudanden</button>
+      <div class="search-button">
+        <img
+          src="images/Mobile/Icon/Looking_glass.svg"
+          class="search-icon"
+          aria-hidden="true"
+        />
+        <button class="top-menu-button"><p>Sök</p></button>
+      </div>
+    </div>
 
     <!-- MAIN -->
 
     <main>
-      <div class="top-search-bar">
-        <input type="search" class="top-search" placeholder="Sök" />
-      </div>
+      <!-- HERO-SEKTION -->
+
       <section class="hero">
-        <div class="hero-container">
+        <!-- 
+          
+          Väntar på besked om nedan ska vara kvar.
+          
+          <div class="hero-container">
           <div class="hero-text">
             <p>
               Löksås ipsum lax groda omfångsrik dimma vi groda denna, ordningens
@@ -92,14 +178,27 @@
           <div class="icon-container">
             <img src="./images/Mobile/Sync-circle.svg" alt="Kretsloppssymbol" />
           </div>
-        </div>
-        <img src="./images/Mobile/Preview3 111 1.png" alt="" />
+        </div> -->
+        <picture>
+          <source
+            srcset="./images/Mobile/HeroMobile.png"
+            media="(max-width: 768px)"
+          />
+          <source
+            srcset="./images/Desktop/HeroDesktop.png"
+            media="(min-width: 769px)"
+          />
+          <img src="./images/Mobile/HeroMobile.png" alt="Hero picture" />
+        </picture>
       </section>
-      <section class="info">
-        <h1>
-          NATURALLY <br />
-          POP-UP EVENT
-        </h1>
+
+      <!-- INFO-SEKTION om pop-up-event -->
+
+      <section class="info-section">
+        <h1>NATURALLY POP-UP EVENT</h1>
+        <span
+          >En mingelkväll och produktvisning du sent kommer att glömma!</span
+        >
         <p>Fredag 9 december kl. 17:00, Framtidsgatan 1, 417 56 Göteborg</p>
         <h2>SIGNA UPP OCH ANMÄL DIG NU</h2>
         <input
@@ -109,58 +208,97 @@
         />
       </section>
 
-      <!--NYHETER och PRODUCT SLIDER-->
-      <section class="news">
-        <div class="news-banner"><h1>Nyheter</h1></div>
-        <div class="products-slider">
-          <div class="product-image-container">
+      <!--SEKTION NYHETER-->
+
+      <section class="news-section">
+        <div class="news-banner">
+          <h2>Nyheter</h2>
+        </div>
+
+        <!-- Sidoscrollande / fast bilduppsättning -->
+
+        <div class="products-img-slider">
+          <div class="product-img-slider-container">
             <h4>Produktnamn</h4>
             <p>299 sek</p>
+            <img
+              src="images/mobile/liten_exempelbild_till_WU 1.png"
+              alt="clothes"
+              class="sidescroll-product-img"
+            />
           </div>
-          <div class="product-image-container">
+          <div class="product-img-slider-container">
             <h4>Produktnamn</h4>
             <p>299 sek</p>
+            <img
+              src="images/Desktop/Product1Desktop.png"
+              alt="clothes"
+              class="sidescroll-product-img"
+            />
           </div>
-          <div class="product-image-container">
+          <div class="product-img-slider-container">
             <h4>Produktnamn</h4>
             <p>299 sek</p>
+            <img
+              src="images/Desktop/Product2Desktop 1.png"
+              alt="clothes"
+              class="sidescroll-product-img"
+            />
           </div>
-          <div class="product-image-container">
+          <div class="product-img-slider-container">
             <h4>Produktnamn</h4>
             <p>299 sek</p>
+            <img
+              src="images/mobile/Preview_kruka_liten 1.png"
+              alt="clothes"
+              class="sidescroll-product-img"
+            />
           </div>
         </div>
       </section>
 
-      <!--LARGE PRODUCT IMAGES-->
-      <section class="clothes-container">
-        <div class="grid-container">
-          <h1>Klädesprodukt namn</h1>
-          <img
-            src="images/mobile/kimono-med-egen-design-1307815_l.jpeg"
-            alt="clothes"
-            width="300px"
-            height="300px"
-          />
+      <!--SEKTION LARGE PRODUCT IMAGES-->
+
+      <section class="large-product-img-section">
+        <div class="large-product-img-container-1st">
+          <h2>Produktnamn</h2>
+          <img src="images/Desktop/Product1Desktop.png" alt="clothes" />
           <button class="button-clothes">Shoppa nu</button>
         </div>
-        <div class="grid-container">
-          <h1>Klädesprodukt namn</h1>
-          <img
-            src="images/mobile/kimono-med-egen-design-1307815_l.jpeg"
-            alt="clothes"
-            width="300px"
-            height="300px"
-          />
+        <div class="large-product-img-container-2nd">
+          <h2>Produktnamn</h2>
+          <img src="images/Desktop/Product2Desktop 1.png" alt="clothes" />
+          <button class="button-clothes">Shoppa nu</button>
+        </div>
+        <div class="large-product-info-1st">
+          <h2>Produktnamn</h2>
+          <p>
+            Löksås ipsum lax groda omfångsrik dimma vi groda denna, ordningens
+            helt genom gamla björnbär vemod groda sax därmed, vidsträckt dunge
+            träutensilierna vidsträckt kunde söka och. Tidigare nya vad åker av
+            tidigare själv därmed upprätthållande sjö trevnadens, inom sällan
+            äng verkligen
+          </p>
+          <button class="button-clothes">Shoppa nu</button>
+        </div>
+        <div class="large-product-info-2nd">
+          <h2>Produktnamn</h2>
+          <p>
+            Löksås ipsum lax groda omfångsrik dimma vi groda denna, ordningens
+            helt genom gamla björnbär vemod groda sax därmed, vidsträckt dunge
+            träutensilierna vidsträckt kunde söka och. Tidigare nya vad åker av
+            tidigare själv därmed upprätthållande sjö trevnadens, inom sällan
+            äng verkligen
+          </p>
           <button class="button-clothes">Shoppa nu</button>
         </div>
       </section>
 
-      <!-- TEXT-SEKTION -->
+      <!-- TEXT-SEKTION om rekrytering-->
 
       <section class="text">
-        <h2>Är du en idéspruta och har<br />förslag på nya produkter?</h2>
-        <h3>Vårt utvecklingsteam är alltid intresserade av<br />nya idéer!</h3>
+        <h2>Är du en idéspruta och har förslag på nya produkter?</h2>
+        <h3>Vårt utvecklingsteam är alltid intresserade av nya idéer!</h3>
         <p>Kontakta oss så pratar vi vidare</p>
         <button class="button-text">Kontakta oss</button>
       </section>
@@ -168,6 +306,8 @@
       <!-- FOOTER -->
 
       <footer>
+        <!-- SEKTION kontaktinformation -->
+
         <section class="contact-info">
           <div class="newsletter">
             <h2>Nyhetsbrev</h2>
@@ -279,6 +419,8 @@
         </div>
       </footer>
     </main>
+
+    <!-- Javascript -->
     <script src="script.js"></script>
   </body>
 </html>
