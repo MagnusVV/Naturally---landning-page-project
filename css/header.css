@@ -4,7 +4,8 @@
   padding: 2.25rem 1.5rem 1rem 1.5rem;
   background-color: var(--latte-macchiato);
   display: grid;
-  grid-template: 1.85rem / 12.4% [hamburger] 0% [globe] 57.6% [logotype] 10.8% [profile] 10.5% [like] 8.7% [shopping-cart];
+  grid-template: 1.85rem / 12.4% [hamburger] 0% [globe] 51.4% [logotype] 12.8% [profile] 12.6% [like] 10.8% [shopping-cart];
+  /*   grid-template: 1.85rem / 12.4% [hamburger] 0% [globe] 57.6% [logotype] 10.8% [profile] 10.5% [like] 8.7% [shopping-cart]; */
   align-items: center;
   justify-items: end;
 }
@@ -19,7 +20,8 @@
   .navbar {
     height: 5.6rem;
     padding: 1.7rem 2rem 0.75rem 2rem;
-    grid-template: 1fr / 0% [hamburger] 23.4% [globe] 53.2% [logotype] 14.7% [profile] 4.7% [like] 4% [shopping-cart];
+    grid-template: 1fr / 0% [hamburger] 21rem [globe] auto [logotype] 13.2rem [profile] 4.2rem [like] 3.6rem [shopping-cart];
+    /* grid-template: 1fr / 0% [hamburger] 23.4% [globe] 53.2% [logotype] 14.7% [profile] 4.7% [like] 4% [shopping-cart]; */
   }
 }
 
@@ -97,12 +99,15 @@
 }
 
 /*Logotypen och dess behållare --->*/
+
+/* (Vi leker med lite selektorer här, eftersom träning är bra :) ) */
 .navbar :nth-child(4) {
   justify-self: start;
 }
 
 .navbar :nth-child(4) img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 11.5rem;
   height: auto;
 }
 
@@ -112,6 +117,7 @@
   }
   .navbar :nth-child(4) img {
     width: 275px;
+    max-width: none;
     height: auto;
   }
 }
