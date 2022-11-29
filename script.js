@@ -64,3 +64,12 @@ searchField.addEventListener("keyup", (submit) => {
     searchField.value = "";
   }
 });
+
+const searchFieldDesktop = document.querySelector(".search");
+
+searchFieldDesktop.addEventListener("keyup", (submit) => {
+  if (submit.key === "Enter") {
+    console.log(submit.target.value);
+    searchFieldDesktop.value = "";
+  }
+});

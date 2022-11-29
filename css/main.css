@@ -69,6 +69,22 @@
   cursor: pointer;
 }
 
+.search {
+  width: 100%;
+  height: 100%;
+  font-family: "Inter-medium";
+  font-size: 24px;
+  color: var(--caffe-mocha);
+  border-color: var(--latte-macchiato);
+  border-top: none;
+  border-bottom: none;
+  border-style: solid;
+  background-color: white;
+  padding-left: 50px;
+
+  cursor: pointer;
+}
+
 /* Behållare för att kunna lägga in sök-symbolen här */
 .search-button {
   width: 100%;
