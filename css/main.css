@@ -231,7 +231,12 @@ background-color: var(--cappuccino); */
     max-width: 40rem;
     border-radius: 48px;
     height: 3.75rem;
-    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .email-input-field {
+    font-size: 20px;
   }
 }
 
@@ -431,24 +436,29 @@ background-color: var(--cappuccino); */
   object-position: center;
 }
 
+.img-slider-container-text {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .img-slider-container-text {
+    top: 1.25rem;
+    left: 1rem;
+  }
+}
+
 .product-img-slider-container h4 {
   font-family: "SourceSerif-medium";
   font-weight: 500;
   font-size: 16px;
-
-  position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
 }
 
 .product-img-slider-container p {
   font-family: "SourceSerif-light";
   font-weight: 300;
   font-size: 16px;
-
-  position: absolute;
-  top: 1.75rem;
-  left: 0.5rem;
 }
 
 @media screen and (min-width: /* 768px */ 1024px) {
@@ -457,23 +467,12 @@ background-color: var(--cappuccino); */
     font-family: "SourceSerif-medium";
     font-weight: 500;
     font-size: 24px;
-    /*     font-weight: 500;
-    font-size: 32px; */
-
-    position: absolute;
-    top: 1.25rem;
-    left: 1rem;
   }
 
   .product-img-slider-container p {
     font-family: "SourceSerif-light";
     font-weight: 300;
     font-size: 24px;
-    /*     font-weight: 300;
-    font-size: 32px; */
-    position: absolute;
-    top: 3.5rem;
-    left: 1rem;
   }
 }
 
@@ -623,6 +622,11 @@ background-color: var(--cappuccino); */
   bottom: 1.25rem;
   right: 1.25rem;
 }
+
+.large-product-info-2nd .button-clothes {
+  left: 1.25rem;
+}
+
 /* After you pressed the button */
 .button-clothes:active,
 .text-clothes:active,
