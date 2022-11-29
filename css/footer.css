@@ -144,16 +144,20 @@ footer p {
 
 @media screen and (min-width: 768px) {
   .footer-sm-icons {
-    width: 20.75rem;
+    width: 100%;
     gap: 10%;
     padding: 2rem 1rem 2rem 1rem;
+  }
+
+  .footer-sm-icons img {
+    width: 75%;
   }
 }
 
 /* Här är det lagom att sociala medier-ikoner blir större. */
 @media screen and (min-width: 1024px) {
   .footer-sm-icons img {
-    width: 125%;
+    width: 100%;
   }
 }
 
