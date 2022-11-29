@@ -140,35 +140,39 @@ background-color: var(--cappuccino); */
   position: relative;
 }
 
-@media screen and (min-width: 768px) {
-  .hero {
-    margin-bottom: 1.375rem;
-  }
-}
-
-.hero-container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  justify-content: space-between;
-  gap: 1.25rem;
-  padding: 1.25rem 1rem 0rem 1rem;
-  position: absolute;
-}
-
-.hero-container p {
-  font-size: 20px;
+.hero-text p {
   font-family: "SourceSerif-light";
   line-height: 20px;
   margin-bottom: 1rem;
 }
 
 .hero-text {
-  width: auto;
+  font-size: 14px;
+  width: calc(2rem + 45%);
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-left: 7%;
+  margin-top: 17%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    margin-bottom: 1.375rem;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+  .hero-text {
+    margin-top: 12%;
+    margin-left: 6%;
+  }
 }
 
 /* Kretsloppsymbol */
-.hero-container .icon-container {
+.icon-container {
   justify-self: end;
 }
 
@@ -463,6 +467,14 @@ background-color: var(--cappuccino); */
     position: absolute;
     top: 1.25rem;
     left: 1rem;
+  }
+  .hero-text p {
+    font-size: 21px;
+    line-height: 30px;
+  }
+  .hero-text {
+    margin-top: 12%;
+    margin-left: 6%;
   }
 
   .product-img-slider-container p {
