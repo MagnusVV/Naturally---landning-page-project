@@ -17,6 +17,11 @@
   cursor: pointer;
 }
 
+/* Remove built in search-icon*/
+input[type="search"]::-webkit-search-decoration {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .navbar {
     height: 5.6rem;
