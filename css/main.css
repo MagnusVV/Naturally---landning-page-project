@@ -11,11 +11,12 @@
 @media screen and (min-width: 768px) {
   .menu-and-top-searchfield-bar {
     height: 3.2rem;
-    background-color: #ffffff;
+    background-color: var(--latte-macchiato);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
+    column-gap: 0.25rem;
   }
 }
 
@@ -60,10 +61,11 @@
   font-family: "Inter-medium";
   font-size: 24px;
   color: var(--caffe-mocha);
-  border-color: var(--latte-macchiato);
+  /*   border-color: var(--latte-macchiato);
   border-top: none;
   border-bottom: none;
-  border-style: solid;
+  border-style: solid; */
+  border: none;
   background-color: white;
   display: none;
   cursor: pointer;
@@ -75,10 +77,11 @@
   font-family: "Inter-medium";
   font-size: 24px;
   color: var(--caffe-mocha);
-  border-color: var(--latte-macchiato);
+  /*   border-color: var(--latte-macchiato);
   border-top: none;
   border-bottom: none;
-  border-style: solid;
+  border-style: solid; */
+  border: none;
   background-color: white;
   padding-left: 50px;
 
