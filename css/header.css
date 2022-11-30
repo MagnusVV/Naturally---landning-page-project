@@ -22,27 +22,11 @@ input[type="search"]::-webkit-search-decoration {
   display: none;
 }
 
-.desktop-img {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
   .navbar {
     height: 5.6rem;
     padding: 1.7rem 2rem 0.75rem 2rem;
     grid-template: 1fr / 0% [hamburger] 21rem [globe] auto [logotype] 13.2rem [profile] 4.2rem [like] 3.6rem [shopping-cart];
-    /* grid-template: 1fr / 0% [hamburger] 23.4% [globe] 53.2% [logotype] 14.7% [profile] 4.7% [like] 4% [shopping-cart]; */
-  }
-  .desktop-img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: grid;
-  }
-
-  .mobile-img {
-    display: none;
   }
 }
 
