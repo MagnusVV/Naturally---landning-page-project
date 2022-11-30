@@ -84,8 +84,6 @@
   border: none;
   background-color: white;
   padding-left: 50px;
-
-  cursor: pointer;
 }
 
 .search::-webkit-input-placeholder {
