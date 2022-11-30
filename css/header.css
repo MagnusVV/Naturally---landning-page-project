@@ -17,6 +17,7 @@
   cursor: pointer;
 }
 
+/* Remove built in search-icon*/
 input[type="search"]::-webkit-search-decoration {
   display: none;
 }
