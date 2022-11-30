@@ -121,3 +121,17 @@
     left: 0;
   }
 }
+
+/* .drop-down-mobile {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.drop-down-content-mobile {
+  display: none;
+  position: absolute;
+}
+
+.drop-down-mobile:hover .drop-down-content-mobile {
+  display: block;
+} */
