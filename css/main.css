@@ -63,7 +63,8 @@
   border-color: var(--latte-macchiato);
   border-top: none;
   border-bottom: none;
-  border-style: solid;
+  outline: 0;
+
   background-color: white;
   display: none;
   cursor: pointer;
@@ -78,7 +79,8 @@
   border-color: var(--latte-macchiato);
   border-top: none;
   border-bottom: none;
-  border-style: solid;
+  outline: 0;
+
   background-color: white;
   padding-left: 50px;
 
