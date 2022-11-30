@@ -38,7 +38,7 @@ input[type="search"]::-webkit-search-decoration {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    display: inline-block;
+    display: grid;
   }
 
   .mobile-img {
