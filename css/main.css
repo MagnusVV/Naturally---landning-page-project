@@ -468,20 +468,20 @@ background-color: var(--cappuccino); */
   object-position: center;
 }
 
-/* Magnus! Här jag försökt ordna med forstad bakgrund */
+/* Textbehållare med frostad bakgrund */
 .img-slider-container-text {
+  height: 33%;
   position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-  box-shadow: inset 0 0 300px rgba(255, 255, 255, 0.5);
-  backdrop-filter: saturate(180%) blur(6px);
-  width: 95%;
+  padding: 0.5rem 0.5rem 0;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: saturate(100%) blur(1px);
+  width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
   .img-slider-container-text {
-    top: 1.25rem;
-    left: 1rem;
+    height: 8rem;
+    padding: 1.25rem 1rem 0;
   }
 }
 
