@@ -17,7 +17,7 @@
   cursor: pointer;
 }
 
-.top-search-field::-webkit-search-decoration {
+input[type="search"]::-webkit-search-decoration {
   display: none;
 }
 
