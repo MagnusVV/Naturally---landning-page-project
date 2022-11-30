@@ -85,6 +85,10 @@
   cursor: pointer;
 }
 
+.search::-webkit-input-placeholder {
+  color: var(--caffe-mocha);
+}
+
 /* Behållare för att kunna lägga in sök-symbolen här */
 .search-button {
   width: 100%;
