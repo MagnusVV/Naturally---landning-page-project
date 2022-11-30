@@ -97,6 +97,11 @@
   display: none;
 }
 
+/* Denna ikon syns på Iphones även i mobilläge. Därför "dubbelgöms den här". */
+.search-button .search-icon {
+  display: none;
+}
+
 /* Knapparna blir synliga vid +mobilbredd */
 @media screen and (min-width: 768px) {
   .top-menu-button {
@@ -107,17 +112,19 @@
     background-color: var(--caffe-mocha);
     color: white;
   }
+
   .top-menu-button:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
+
   .search-button {
     display: flex;
     text-align: left;
     align-items: center;
   }
-  .search-button .top-menu-button p {
-    text-align: left;
-    margin-left: 18.4%;
+
+  .search-button .search-icon {
+    display: block;
   }
 
   .submit {
