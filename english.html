@@ -16,12 +16,17 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="icon" href="./images/Favicon/favicon.ico" />
-<title>Naturally</title>
+    <link rel="apple-touch-icon" href="./images/Favicon/favicon.ico" />
+
+    <title>Naturally</title>
   </head>
+
   <body>
     <!-- HEADER -->
+
     <header>
       <!-- Navbar -->
+
       <nav class="navbar">
         <ul class="nav-menu">
           <!-- Ska bara visas i hamburgar-menyn-->
@@ -37,14 +42,14 @@
                 class="menu-active"
               />
             </div>
-             <img
+            <img
               src="./images/Desktop/Button/globe.svg"
               alt="choose language"
               class="CTA-icon-globe-hamburger"
             />
             <a href="index.html">SV</a>
           </div>
-        </div>
+
           <li class="nav-item">
             <a href="#" class="navlink">Products</a>
           </li>
@@ -68,15 +73,15 @@
             class="logo-mobile"
           />
         </ul>
-         <!-- SEKTION Hamburgar-menyn -->
-         <section class="hamburger-section">
+        <!-- SEKTION Hamburgar-menyn -->
+        <section class="hamburger-section">
           <div class="hamburger-menu">
             <img src="./images/mobile/Button/Hamburger-icon.svg" class="menu" />
           </div>
         </section>
 
         <!-- Logotypen och CTA-ikoner -->
-        
+
         <!-- Rullgardinsmeny för att välja språk -->
         <div class="choose-lang">
           <div class="icon-container">
@@ -148,7 +153,7 @@
     <!-- MAIN -->
     <main>
       <!-- HERO-SEKTION -->
-      
+
       <section class="hero">
         <div class="hero-text">
           <p>
@@ -157,22 +162,23 @@
           </p>
         </div>
         <picture>
-            <source 
-            srcset="./images/Mobile/HeroMobileV2.png"
-            media="(max-width: 767px)"
-            />
           <source
-            srcset="./images/Desktop/HeroDesktop2V2.png"
+            srcset="./images/Mobile/HeroMobileV2.avif"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="./images/Desktop/HeroDesktop2V2.avif"
             media="(min-width: 768px)"
           />
-          <img src="./images/Mobile/HeroMobileV2.png" alt="Hero picture" />
+          <img src="./images/Mobile/HeroMobileV2.avif" alt="Hero picture" />
         </picture>
-       
-        </section>
-        <!-- INFO-SEKTION om pop-up-event -->
-        <section class="info-section">
+      </section>
+      <!-- INFO-SEKTION om pop-up-event -->
+      <section class="info-section">
         <h1>NATURALLY POP-UP EVENT</h1>
-        <span>A mingling evening and product display you won't soon forget!</span>
+        <span
+          >A mingling evening and product display you won't soon forget!</span
+        >
         <p>Dec 9th from 5:00 PM, Framtidsgatan 1</p>
         <h2>SIGN UP FOR THE EVENT NOW</h2>
         <input
@@ -198,60 +204,88 @@
               <h4>Glazed ceramic pot</h4>
               <p>299 sek</p>
             </div>
-            <img
-              src="images/naturally-vase.jpg"
-              alt="naturally vase grey and pink"
-              class="sidescroll-product-img"
-            />
+
+            <picture>
+              <source
+                srcset="images/Mobile/naturally-vase_mobile.avif"
+                media="(max-width:767px)"
+              />
+              <source
+                srcset="images/Desktop/naturally-vase_desktop.avif"
+                media="(min-width:768px)"
+              />
+              <img
+                src="images/Mobile/naturally-vase_mobile.avif"
+                alt="Glazed ceramic pot"
+                class="sidescroll-product-img"
+              />
+            </picture>
           </div>
           <div class="product-img-slider-container">
             <div class="img-slider-container-text">
               <h4>Coffee mug in glazed stoneware</h4>
               <p>299 sek</p>
             </div>
-            <img
-            srcset="images/Desktop/Product1Desktop.png"
-            alt="naturally kaffemugg i glaserat stengods"
-            class="sidescroll-product-img desktop-img"
-          />
-          <img
-            srcset="images/Mobile/Product1Mobile.png"
-            alt="naturally kaffemugg i glaserat stengods"
-            class="sidescroll-product-img mobile-img"
-          />
+
+            <picture>
+              <source
+                srcset="images/Mobile/Product1Mobile.avif"
+                media="(max-width:767px)"
+              />
+              <source
+                srcset="images/Desktop/Product1Desktop.avif"
+                media="(min-width:768px)"
+              />
+              <img
+                src="images/Mobile/Product1Mobile.avif"
+                alt="Coffee mug in glazed stoneware"
+                class="sidescroll-product-img"
+              />
+            </picture>
           </div>
           <div class="product-img-slider-container">
             <div class="img-slider-container-text">
               <h4>Naturally table lamp</h4>
               <p>299 sek</p>
             </div>
-            <img
-            srcset="images/Desktop/LampaDesktopV2.png"
-            alt="Naturally bordslampa"
-            class="sidescroll-product-img desktop-img"
-          />
-          <img
-            srcset="images/mobile/LampaMobileV2.png"
-            alt="Naturally bordslampa"
-            class="sidescroll-product-img mobile-img"
-          />
+
+            <picture>
+              <source
+                srcset="images/Mobile/LampaMobileV2.avif"
+                media="(max-width:767px)"
+              />
+              <source
+                srcset="images/Desktop/LampaDesktopV2.avif"
+                media="(min-width:768px)"
+              />
+              <img
+                src="images/Mobile/LampaMobileV2.avif"
+                alt="Naturally table lamp"
+                class="sidescroll-product-img"
+              />
+            </picture>
           </div>
           <div class="product-img-slider-container">
             <div class="img-slider-container-text">
               <h4>Saris Kimono</h4>
               <p>299 sek</p>
             </div>
-            <img
-            srcset="images/Desktop/Produkt_i_bild_desktop.jpg"
-            alt="Naturally kimono in procuct box"
-            class="sidescroll-product-img desktop-img"
-          />
 
-          <img
-            srcset="images/Mobile/produkt_i_bild_mobil.jpg"
-            alt="Naturally Kimono i product box"
-            class="sidescroll-product-img mobile-img"
-          />
+            <picture>
+              <source
+                srcset="images/Mobile/produkt_i_bild_mobil.avif"
+                media="(max-width:767px)"
+              />
+              <source
+                srcset="images/Desktop/Produkt_i_bild_desktop.avif"
+                media="(min-width:768px)"
+              />
+              <img
+                src="images/Mobile/produkt_i_bild_mobil.avif"
+                alt="Saris Kimono"
+                class="sidescroll-product-img"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -304,10 +338,10 @@
             smooth polyester lining. The waist belt make it possible to ware it
             both open and closed, making it a great layering piece. Our Kimono
             is both environmentalist's dream and a luxurious fashion item.<br />
-            <br>
-            A piece of clothing that is environmentally friendly,
-            beautiful, elegant, and comfortable to wear. Should be washed at 30
-            degrees or hand washed only <br />
+            <br />
+            A piece of clothing that is environmentally friendly, beautiful,
+            elegant, and comfortable to wear. Should be washed at 30 degrees or
+            hand washed only <br />
             <br />Color: Green with small leaf shaped patterns <br />
             Material: 100% recycled saris and polyester <br />
             Size: One-size unisex
