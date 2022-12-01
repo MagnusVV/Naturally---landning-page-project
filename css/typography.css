@@ -1,10 +1,3 @@
-/* Mall för font-face:
- @font-face {
-  font-family: "Inter-regular";
-  src: local(), url() format(), url() format();
-  font-weight: 400;
-} */
-
 /* Inter-regular*/
 @font-face {
   font-family: "Inter-regular";
