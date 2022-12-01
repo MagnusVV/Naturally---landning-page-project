@@ -1,3 +1,5 @@
+/* <!-- HEADER --> */
+
 /* Nav-delen med Hamburger-meny, loggan och CTA-ikoner*/
 .navbar {
   height: 5rem;
@@ -5,7 +7,6 @@
   background-color: var(--latte-macchiato);
   display: grid;
   grid-template: 1.85rem / 12.4% [hamburger] 0% [globe] 51.4% [logotype] 12.8% [profile] 12.6% [like] 10.8% [shopping-cart];
-  /*   grid-template: 1.85rem / 12.4% [hamburger] 0% [globe] 57.6% [logotype] 10.8% [profile] 10.5% [like] 8.7% [shopping-cart]; */
   align-items: center;
   justify-items: end;
 }
@@ -22,20 +23,20 @@ input[type="search"]::-webkit-search-decoration {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  .navbar {
-    height: 5.6rem;
-    padding: 1.7rem 2rem 0.75rem 2rem;
-    grid-template: 1fr / 0% [hamburger] 21rem [globe] auto [logotype] 13.2rem [profile] 4.2rem [like] 3.6rem [shopping-cart];
-  }
-}
-
 .navbar :nth-child(2) {
   justify-self: start;
 }
 
 .navbar :nth-child(3) {
   justify-self: start;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    height: 5.6rem;
+    padding: 1.7rem 2rem 0.75rem 2rem;
+    grid-template: 1fr / 0% [hamburger] 21rem [globe] auto [logotype] 13.2rem [profile] 4.2rem [like] 3.6rem [shopping-cart];
+  }
 }
 
 /*Rullgardinsmeny för att välja språk*/
@@ -56,23 +57,9 @@ input[type="search"]::-webkit-search-decoration {
   }
 }
 
-/*Globen*/
+/* <-- GLOBEN och MENYN för att byta språk. --> */
 .CTA-icon-globe {
   width: min-content;
-}
-
-/*Globen vid +mobilstorlek*/
-@media screen and (min-width: 768px) {
-  .CTA-icon-globe {
-    width: 32px;
-  }
-}
-
-/*Globen vid desktopstorlek*/
-@media screen and (min-width: 1024px) {
-  .CTA-icon-globe {
-    width: 36px;
-  }
 }
 
 /*Själva rullgardinsmenyn (hover i detta fall)*/
@@ -103,7 +90,23 @@ input[type="search"]::-webkit-search-decoration {
   font-size: 16px;
 }
 
-/*Logotypen och dess behållare --->*/
+/*Globen vid +mobilstorlek*/
+@media screen and (min-width: 768px) {
+  .CTA-icon-globe {
+    width: 32px;
+  }
+}
+
+/*Globen vid desktopstorlek*/
+@media screen and (min-width: 1024px) {
+  .CTA-icon-globe {
+    width: 36px;
+  }
+}
+
+/* <--- --- --- --- --- */
+
+/*NATURALLY-logotypen och dess behållare --->*/
 
 /* (Vi leker med lite selektorer här, eftersom träning är bra :) ) */
 .navbar :nth-child(4) {
@@ -136,8 +139,8 @@ input[type="search"]::-webkit-search-decoration {
 
 /* <--- --- --- --- */
 
-/*CTA-ikonerna vid +mobil-storlek*/
 @media screen and (min-width: 768px) {
+  /*CTA-ikonerna vid +mobil-storlek*/
   .navbar :nth-child(5) img,
   .navbar :nth-child(6) img,
   .navbar :nth-child(7) img {
@@ -146,8 +149,8 @@ input[type="search"]::-webkit-search-decoration {
   }
 }
 
-/*CTA-ikonerna vid desktop-storlek*/
 @media screen and (min-width: 1024px) {
+  /*CTA-ikonerna vid desktop-storlek*/
   .navbar :nth-child(5) img,
   .navbar :nth-child(6) img,
   .navbar :nth-child(7) img {
@@ -156,7 +159,7 @@ input[type="search"]::-webkit-search-decoration {
   }
 }
 
-/* Hamburgar-menyns komponenter ---> */
+/* HAMBURGAR-menyns komponenter ---> */
 
 li {
   list-style: none;
@@ -199,3 +202,155 @@ a {
 }
 
 /* <--- --- --- --- */
+
+/* Behållaren för SÖKFÄLTET och MENYKNAPPARNA högst upp*/
+
+.menu-and-top-searchfield-bar {
+  height: 3rem;
+  background-color: var(--latte-macchiato);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+.field-looking-glass-container {
+  min-width: fit-content;
+  width: 23.75rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-and-top-searchfield-bar {
+    height: 3.2rem;
+    background-color: var(--latte-macchiato);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    column-gap: 0.25rem;
+  }
+
+  /* Sökfältet försvinner och ger plats åt meny-knappar*/
+  .field-looking-glass-container {
+    display: none;
+  }
+}
+
+/* Sökfältet */
+.top-searchfield {
+  width: 96%;
+  max-width: 23.75rem;
+  border-radius: 40px;
+  height: 2rem;
+  border: none;
+  padding-left: 44px;
+  font-size: 20px;
+  color: var(--caffe-correto);
+  font-family: "source serif 4";
+}
+
+.search-icon {
+  position: absolute;
+  left: 6%;
+}
+
+/* Knapparna som ersätter sökfältet vid desktop-storlek */
+.top-menu-button {
+  width: 100%;
+  height: 100%;
+  font-family: "Inter-medium";
+  font-size: 24px;
+  color: var(--caffe-mocha);
+  border: none;
+  background-color: white;
+  display: none;
+  cursor: pointer;
+}
+
+.search {
+  width: 100%;
+  height: 100%;
+  font-family: "Inter-medium";
+  font-size: 24px;
+  color: var(--caffe-mocha);
+  border: none;
+  background-color: white;
+  padding-left: 50px;
+}
+
+.search::-webkit-input-placeholder {
+  color: var(--caffe-mocha);
+}
+
+/* Behållare för att kunna lägga in sök-symbolen här */
+.search-button {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: none;
+}
+
+/* Denna ikon syns på Iphones även i mobilläge. Därför "dubbelgöms den här". */
+.search-button .search-icon {
+  display: none;
+}
+
+/* Knapp event-post email*/
+.submit {
+  margin-top: 1rem;
+  width: 9.6rem;
+  height: 2.75rem;
+  font-family: "Inter-medium";
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--espresso);
+  border-radius: 2.5rem;
+  background-color: white;
+}
+
+/* Knapparna blir synliga vid +mobilbredd */
+@media screen and (min-width: 768px) {
+  .top-menu-button {
+    display: inline-block;
+  }
+
+  .top-menu-button:active {
+    background-color: var(--caffe-mocha);
+    color: white;
+  }
+
+  .top-menu-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .search-button {
+    display: flex;
+    text-align: left;
+    align-items: center;
+  }
+
+  .search-button .search-icon {
+    display: block;
+  }
+
+  .submit {
+    display: none;
+  }
+}
+
+/* <--- --- --- --- */
+
+/* Behållare för ikonerna i nav-bar och footer*/
+.icon-container {
+  min-width: 1%;
+  width: auto;
+}
+
+.icon-container img {
+  object-fit: cover;
+  object-position: center;
+}
